@@ -1,0 +1,41 @@
+---
+demo: true
+nav-sticky: true
+nav-dark: true
+divider-bg: dark
+divider-svg: light
+page-title: Landing pages
+page-subtitle: Predefined templates
+---
+<section class="pt-3">
+    <div class="container">
+
+        <header class="mb-3">
+            <label class="pre-label">Templates preview</label>
+        </header>
+
+        <div class="row mb-5">
+            {{#each data.templates}}
+            <div class="col-lg-4">
+                <div class="mb-3">
+                    <div class="box box-image box-hover br-sm mb-3 shadow-sm bg-gray px-5 pt-5">
+                        <a href="{{url}}" target="_blank">
+                            <img src="{{../data.img}}{{img}}" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <p class="lead">{{title}}</p>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+
+        <div class="pt-5 text-center">
+            <a href="inner-pages.html" class="btn btn-primary btn-rounded px-4">
+                <i class="icon icon-layers"></i>
+                View inner pages
+            </a>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,36 @@
+/*  
+    ------------------
+    Background light
+    -----------------
+*/
+@each $color, $value in $theme-colors {
+    .bg-light-#{$color} {
+        background-color: lighten($value, 15%);
+    }
+}
+
+/*  
+    ------------------
+    Background colors
+    -----------------
+*/
+
+@each $color, $value in $colors {
+    .bg-#{$color} {
+        color: color-yiq($value);
+        background-color: #{$value};
+    }
+}
+
+/*  
+    ------------------
+    Background grays
+    -----------------
+*/
+
+@each $color, $value in $grays {
+    .bg-#{$color} {
+        color: color-yiq($value);
+        background-color: #{$value};
+    }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="100" viewBox="0 0 1920 100">
+  <defs>
+    <clipPath id="clip-divider-5">
+      <rect width="1920" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="divider-5" clip-path="url(#clip-divider-5)">
+    <path id="Path_3" data-name="Path 3" d="M0,11S168.915,69.242,406.27,70.7,685.853,57.593,850.4,37.207,1259.752,73.448,1517.323,70.7,1920,19.667,1920,19.667V101H0Z" transform="translate(0 -1)"/>
+    <path id="Path_4" data-name="Path 4" d="M1920,102.048s-89.6,137.879-398.308,19.053c-162.379-62.5-391.708,20.855-598.484,20.855-206.775,22.449-295.6-77.886-503.833-39.909C286.864,132.511,0,110.668,0,110.668v62.337H1920Z" transform="translate(0 -73.005)" fill="rgba(0,0,0,0.34)"/>
+    <path id="Path_5" data-name="Path 5" d="M0,102.147S407.045,189.7,555.574,121.265C717.953,58.549,760.893,69.884,840.982,85.957c188.351,79.39,348.351-56.61,532.351,70.057C1489,91.538,1920,110.8,1920,110.8v62.551H0Z" transform="translate(0 -73.347)" fill="rgba(0,0,0,0.34)"/>
+  </g>
+</svg>

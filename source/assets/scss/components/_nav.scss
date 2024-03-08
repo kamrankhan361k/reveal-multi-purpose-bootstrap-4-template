@@ -1,0 +1,206 @@
+/*  
+    --------------
+    Nav defaults
+    --------------
+*/
+.nav-item {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.nav-link {
+    color: $secondary;
+
+    &.dropdown-toggle {
+        padding-right: 1.5rem !important;
+    }
+}
+
+.nav-link,
+.navbar-brand {
+    @include transition(color 0.5s);
+
+    @include media-breakpoint-down(md) {
+        padding-left: $spacer;
+    }
+}
+/*  
+    --------------
+    Nav tabs
+    --------------
+*/
+.nav-tabs {
+    .nav-link {
+        padding-bottom: $spacer;
+    }
+
+    .lavalamp-object {
+        background-color: transparent;
+        border-bottom: 2px solid $primary;
+    }
+
+    &.vertical {
+        .nav-link {
+            padding: $spacer/2 $spacer;
+        }
+
+        .lavalamp-object {
+            background-color: transparent;
+            border-left: 2px solid $primary;
+            border-bottom: 0;
+        }
+    }
+}
+/*  
+    --------------
+    Nav pills
+    --------------
+*/
+.nav-pills {
+    .lavalamp-object {
+        background-color: transparent;
+        border: 2px solid $primary;
+        @include radiusXl;
+    }
+}
+/*  
+    -----------------------
+    Nav tabs & pills colors
+    -----------------------
+*/
+@each $color, $value in $theme-colors {
+    .nav-tabs-#{$color},
+    .nav-pills-#{$color} {
+        .nav-link {
+            &.active,
+            &:hover {
+                color: $value;
+            }
+        }
+
+        .lavalamp-object {
+            border-color: $value;
+        }
+    }
+}
+
+.nav-tabs-light,
+.nav-pills-light {
+    .nav-link {
+        &.active,
+        &:hover {
+            color: $black;
+        }
+
+        .lavalamp-object {
+            border-color: $black;
+        }
+    }
+}
+/*  
+    --------------
+    Nav box colors
+    --------------
+*/
+.nav-box {
+    background: darken($body-bg, 3%);
+    border-radius: 0.25rem;
+    padding: 2px;
+
+    &.nav-inline {
+        display: inline-flex;
+    }
+
+    .nav-item {
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+
+    .nav-link {
+        &.active {
+            color: $primary;
+        }
+    }
+
+    .lavalamp-object {
+        background-color: white;
+        border-radius: 0.25rem;
+    }
+}
+/*  
+    --------------
+    Nav box colors
+    --------------
+*/
+@each $color, $value in $theme-colors {
+    .nav-box-#{$color} {
+        .nav-link {
+            &:hover {
+                color: $value;
+            }
+
+            &.active {
+                color: color-yiq($value) !important;
+            }
+        }
+
+        .lavalamp-object {
+            background-color: $value !important;
+            border-radius: 0.25rem;
+        }
+    }
+}
+/*  
+    --------------
+    Nav dark mode
+    --------------
+*/
+@include dark-mode {
+    .nav-box {
+        background-color: $body-bg-dark-light;
+
+        .nav-link {
+            &.active {
+                color: $body-color-dark;
+            }
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        .lavalamp-object {
+            background-color: $body-bg-dark;
+        }
+    }
+
+    .nav-tabs-light,
+    .nav-pills-light {
+        .nav-link {
+            &.active,
+            &:hover {
+                color: $white;
+            }
+
+            .lavalamp-object {
+                border-color: $white;
+            }
+        }
+    }
+
+    .nav-tabs-dark,
+    .nav-pills-dark {
+        .nav-link {
+            &.active,
+            &:hover {
+                color: $gray-500;
+            }
+
+            .lavalamp-object {
+                border-color: $gray-500;
+            }
+        }
+    }
+}

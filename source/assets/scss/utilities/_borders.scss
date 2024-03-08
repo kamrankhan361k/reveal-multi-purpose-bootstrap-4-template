@@ -1,0 +1,49 @@
+/*  
+    ------------------
+    Border radius
+    -----------------
+*/
+.br-xs,
+.br-sm,
+.br-md,
+.br-lg,
+.br-xl {
+    overflow: hidden;
+}
+
+.br-xs {
+    @include radiusXs;
+}
+
+.br-sm {
+    @include radiusSm;
+}
+
+.br-md {
+    @include radiusMd;
+}
+
+.br-lg {
+    @include radiusLg;
+}
+
+.br-xl {
+    @include radiusXl;
+}
+/*  
+    ---------------------
+    Border radius corners
+    ---------------------
+*/
+.br-tl {
+    border-top-left-radius: $spacer * 2;
+}
+.br-tr {
+    border-top-right-radius: $spacer * 2;
+}
+.br-bl {
+    border-bottom-left-radius: $spacer * 2;
+}
+.br-br {
+    border-bottom-right-radius: $spacer * 2;
+}

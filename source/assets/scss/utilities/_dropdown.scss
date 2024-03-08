@@ -1,0 +1,47 @@
+/*  
+    ------------------
+    Dropdown
+    -----------------
+*/
+.dropdown {
+    &.show {
+        .dropdown-toggle {
+            &::after {
+                @include transform(rotate(180deg));
+            }
+        }
+    }
+}
+
+.dropdown-toggle {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "\e874";
+        font-family: "LinearIcons";
+        font-size: 0.625rem;
+        top: 50%;
+        right: 0.5rem;
+        border: 0;
+        margin-top: -7px;
+        display: inline-block;
+        @include duration-2;
+    }
+}
+
+.dropdown-menu {
+    @include media-breakpoint-up(lg) {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        @include duration-4;
+        @include translate-bottom-sm;
+
+        &.show {
+            opacity: 1;
+            visibility: visible;
+            @include translate-start;
+        }
+    }
+}

@@ -1,0 +1,166 @@
+/*  
+    --------------
+    Steps
+    --------------
+*/
+.steps {
+    color: white;
+
+    &.steps-sm {
+        > ul {
+            > li {
+                .step-item {
+                    font-size: 30px;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+
+                    span {
+                        font-size: $font-size-sm;
+                    }
+
+                    &:after {
+                        font-size: $font-size-sm - 0.125;
+                        @include media-breakpoint-up(lg) {
+                            font-size: $font-size-sm;
+                        }
+                    }
+                }
+
+                &.active {
+                    .step-item {
+                        &:before {
+                            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='-10 0 48 30'><path fill='white' d='M24 4.685l-16.327 17.315-7.673-9.054.761-.648 6.95 8.203 15.561-16.501.728.685z'/></svg>");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    > ul {
+        @include reset-spacing;
+
+        > li {
+            list-style-type: none;
+            position: relative;
+            text-align: center;
+            padding: 0;
+            color: $body-bg;
+
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+
+            &:before {
+                background-color: rgba($dark, 0.1);
+                position: absolute;
+                display: block;
+                content: "";
+                width: 100%;
+                height: 1px;
+                top: 50%;
+                right: 50%;
+                z-index: 0;
+            }
+
+            .step-item {
+                font-size: $font-size-base;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                display: inline-block;
+                position: relative;
+                z-index: 9;
+                font-family: "LinearIcons" !important;
+                @include radius(50%);
+                background-color: $secondary;
+                border: 1px solid transparent;
+
+                span {
+                    font-family: $font-family-body;
+                    display: block;
+                    color: $white;
+                }
+
+                &:before {
+                    display: none;
+                    content: "\e87f";
+                    font-size: $font-size-base * 1.2;
+                }
+
+                &:after {
+                    content: attr(data-text);
+                    position: absolute;
+                    display: inline-block;
+                    top: 100%;
+                    text-align: center;
+                    width: initial;
+                    left: 50%;
+                    white-space: nowrap;
+                    @include transform(translateX(-50%));
+                    font-family: $font-family-body;
+                    margin-top: $spacing-sm;
+                    line-height: initial;
+                    color: $secondary;
+                }
+            }
+
+            &.active {
+                color: $body-color;
+
+                &:before {
+                    background-color: $primary;
+                }
+
+                .step-item {
+                    background-color: $primary;
+                    border-color: $primary;
+                    color: $white;
+
+                    span {
+                        display: none;
+                    }
+
+                    &:before {
+                        content: "🗸";
+                        color: transparent;
+                        display: block;
+                        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='-10 0 48 30'><path fill='white' d='M24 4.685l-16.327 17.315-7.673-9.054.761-.648 6.95 8.203 15.561-16.501.728.685z'/></svg>");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+
+            &.current {
+                &:before {
+                    background-color: $primary;
+                }
+
+                .step-item {
+                    background-color: $primary;
+                    color: white;
+
+                    &:after {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include dark-mode {
+    .steps {
+        > ul {
+            > li {
+                &:before {
+                    background-color: rgba($white, 0.2);
+                }
+            }
+        }
+    }
+}

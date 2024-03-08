@@ -1,0 +1,64 @@
+{{> comment title="Blog sidebar"}}
+
+<div class="bg-white shadow-sm br-sm p-4 mb-4">
+
+    <small class="pre-label mb-4">Categories</small>
+
+    <hr>
+
+    <ul class="list-group list-group-clean">
+        <li class="list-group-item">
+            <a href="#" class="link link-right link-dark">Business</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="link link-right link-dark">Lifestyle</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="link link-right link-dark">Technology</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="link link-right link-dark">Business</a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" class="link link-right link-dark">Entertainment</a>
+        </li>
+    </ul>
+</div>
+
+<div class="bg-white shadow-sm br-sm p-4 mb-4">
+
+    <small class="pre-label mb-4">Popular</small>
+
+    <hr>
+
+    <ul class="list-group list-group-clean">
+        {{#each (take data.news 5)}}
+        <li class="list-group-item">
+            <a href="#" class="d-flex align-items-center">
+                <span class="text-center pr-4">
+                    <small>Dec</small>
+                    <span class="h5 m-0">24</span>
+                </span>
+                <span>{{title}}</span>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+
+<div class="bg-white shadow-sm br-sm p-4 mb-4">
+
+    <small class="pre-label mb-4">Tags</small>
+
+    <hr>
+
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">Travel</a>
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">Design</a>
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">Business</a>
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">Economy</a>
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">World</a>
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">Technology</a>
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">Marketing</a>
+    <a href="#" class="btn btn-outline-dark btn-rounded btn-sm mb-2">Shopping</a>
+
+</div>

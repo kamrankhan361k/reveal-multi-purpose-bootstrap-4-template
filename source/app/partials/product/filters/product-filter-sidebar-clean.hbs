@@ -1,0 +1,141 @@
+{{> comment title="Left side filters"}}
+
+<div class="col-lg-3 sidebar sidebar-mobile pr-lg-5" id="open-mobile-filters">
+    <div class="sidebar-content pt-lg-5">
+
+        {{> comment title="Sidebar header"}}
+
+        <div class="sidebar-header clearfix d-lg-none">
+            <button type="button" class="close toggle-show p-3" data-show="open-mobile-filters" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        {{> comment title="Search"}}
+
+        <div class="mb-4">
+            <div class="input-group">
+                <input type="text" class="form-control form-control-sm" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary btn-sm" type="button" id="button-addon2">Go!</button>
+                </div>
+            </div>
+        </div>
+
+        {{> comment title="Slider range"}}
+
+        <div class="mb-4">
+
+            <div class="pt-4">
+                <div class="d-flex justify-content-between">
+                    <span>Price</span>
+                    <span>
+                        $ <b class="price-value"></b>
+                    </span>
+                </div>
+                <input type="range" class="custom-range price-range" id="customRange1" min="0" max="500" step="5">
+                <div class="d-flex justify-content-between">
+                    <small>$ 0</small>
+                    <small>$ 500</small>
+                </div>
+            </div>
+
+        </div>
+
+        {{> comment title="Checkbox group"}}
+
+        <div class="mb-4">
+            <a class="btn btn-sm btn-clean px-0 py-1" data-toggle="collapse" href="#collapseExampleCheckbox" role="button" aria-expanded="false" aria-controls="collapseExampleCheckbox">
+                <span>Checboxes</span>
+            </a>
+            <div class="collapse show" id="collapseExampleCheckbox">
+                <ul class="list-group list-group-clean pt-2">
+
+                    {{#each data.filter.filters-group-1}}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="custom-control custom-control-sm custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheckGroup{{id}}">
+                            <label class="custom-control-label text-muted" for="customCheckGroup{{id}}">{{title}}</label>
+                        </span>
+                        <span class="badge badge-light badge-pill">{{qty}}</span>
+                    </li>
+
+                    {{/each}}
+                    {{#each data.filter.filters-group-2}}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="custom-control custom-control-sm custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheckCategory{{id}}">
+                            <label class="custom-control-label text-muted" for="customCheckCategory{{id}}">{{title}}</label>
+                        </span>
+                        <span class="badge badge-light badge-pill">{{qty}}</span>
+                    </li>
+
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        {{> comment title="Radio buttons group"}}
+
+        <div class="mb-4">
+            <a class="btn btn-sm btn-clean px-0 py-1" data-toggle="collapse" href="#collapseExampleRadio" role="button" aria-expanded="false" aria-controls="collapseExampleRadio">
+                <span>Radio buttons</span>
+            </a>
+            <div class="collapse show" id="collapseExampleRadio">
+                <ul class="list-group list-group-clean pt-2">
+
+                    {{#each data.filter.filters-group-3}}
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span class="custom-control custom-control-sm custom-radio">
+                            <input type="radio" id="customRadio{{id}}" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label text-muted" for="customRadio{{id}}">{{title}}</label>
+                        </span>
+                        <span class="badge badge-light badge-pill">{{qty}}</span>
+                    </li>
+                    {{/each}}
+
+                </ul>
+            </div>
+        </div>
+
+        {{> comment title="Checkbox group"}}
+
+        <div class="mb-4">
+
+            <a class="btn btn-sm btn-clean px-0 py-1 mb-2" data-toggle="collapse" href="#collapseExampleSize" role="button" aria-expanded="false" aria-controls="collapseExampleSize">
+                <span>Sizes</span>
+            </a>
+
+            <div class="collapse show" id="collapseExampleSize">
+                <div class="d-flex justify-content-between">
+
+                    <span class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-gray active">
+                            <input type="checkbox" checked> S
+                        </label>
+                    </span>
+
+                    <span class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-gray active">
+                            <input type="checkbox" checked> M
+                        </label>
+                    </span>
+
+                    <span class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-gray active">
+                            <input type="checkbox"> L
+                        </label>
+                    </span>
+
+                    <span class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-gray active">
+                            <input type="checkbox"> XL
+                        </label>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,25 @@
+/*  
+    ------------------
+    Horizontal line
+    -----------------
+*/
+hr {
+    position: relative;
+
+    &:before {
+        content: attr(data-text);
+        @include centered;
+    }
+
+    &.divider {
+        margin: 0 !important;
+    }
+
+    &.dark {
+        border-color: $border-color-dark;
+    }
+    
+    &.light {
+        border-color: $border-color;
+    }
+}

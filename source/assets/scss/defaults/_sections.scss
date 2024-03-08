@@ -1,0 +1,39 @@
+/*  
+    --------------
+    Sections
+    --------------
+*/
+.section-bg-header,
+.section-bg-footer {
+    > * {
+        position: relative;
+    }
+}
+
+.section-bg-header {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        top: 0;
+        content: "";
+        background-color: $primary;
+    }
+}
+
+.section-bg-footer {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        bottom: 0;
+        content: "";
+        background-color: $primary;
+    }
+}

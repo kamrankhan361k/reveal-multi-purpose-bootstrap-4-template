@@ -1,0 +1,1136 @@
+{
+    "imgtemp": "../assets/images/templates/",
+    "img": "assets/images/",
+    "svg": "assets/svg/",
+    "lorem": {
+        "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus odio quam, facilisis vel placerat at, convallis at ipsum. Quisque posuere justo non imperdiet volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vehicula felis lorem, at sodales mauris convallis in. Quisque elementum augue justo, at rutrum velit eleifend sed. Mauris vitae metus erat. Duis augue purus, ornare vitae mauris eget, dictum tincidunt leo. Sed quis felis blandit, aliquam sapien eget, pulvinar dolor. Vivamus vulputate egestas justo non ullamcorper.",
+        "p2": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio. In blandit sem eu ante pellentesque, ornare placerat metus fringilla. Ut eu arcu finibus, aliquam libero nec, porta elit. Praesent sit amet odio a quam vehicula molestie eu ut quam. Vivamus viverra augue nulla, ac commodo sapien dictum ut. Pellentesque vehicula maximus velit vitae imperdiet.",
+        "p3": "Praesent mattis justo sit amet dui semper tempus vel eu turpis. Donec sem nulla, porta vitae sollicitudin et, finibus vel ligula. Fusce et lorem pharetra, egestas tortor sit amet, ultricies mi. Cras ac tellus et eros maximus cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ultricies leo tempor, ullamcorper magna nec, consectetur sapien. Maecenas rhoncus non eros id tristique. Aenean condimentum in quam sed rhoncus. Nunc aliquet, dolor rhoncus imperdiet faucibus, est ipsum sollicitudin massa, a placerat justo leo vel turpis. In venenatis felis vitae volutpat viverra. Donec sit amet urna tempus, convallis nunc eget, tempor neque. Nunc gravida tincidunt lectus. Mauris molestie sit amet dolor sit amet luctus. Maecenas ligula mi, tempor at dignissim ut, fermentum ut arcu.",
+        "p4": "Curabitur non ipsum sit amet elit ultricies venenatis. Sed blandit vitae justo sit amet convallis. Aliquam tristique, odio quis vestibulum interdum, magna risus luctus augue, vitae lobortis est enim vel mauris. In eu nibh sed neque auctor efficitur. Aenean quis congue urna. Suspendisse id ultrices eros. Aliquam bibendum massa eget ex scelerisque, vitae convallis felis rutrum. Integer sed augue quam.",
+        "p5": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent quis justo mollis, bibendum magna posuere, auctor ex. Nam vitae blandit metus. Etiam fringilla a arcu in euismod. Vestibulum et hendrerit tortor, non condimentum tortor. Vivamus vitae porttitor libero. Ut tempus massa in turpis ultricies feugiat. Sed sit amet lorem libero. Cras ultricies molestie lobortis. Sed iaculis diam sed ipsum vehicula, nec blandit lacus rutrum. Cras felis est, sodales et viverra vulputate, posuere vel diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed mi ex, laoreet vitae felis sit amet, blandit hendrerit lectus. Sed ut ante dapibus, ultrices ipsum nec, imperdiet dolor. Vestibulum arcu elit, sodales at malesuada in, condimentum sed neque. Maecenas placerat ligula ac dignissim molestie."
+    },
+    "text": {
+        "heading": {
+            "h-1": "Professionally maintain focused processes",
+            "h-2": "Credibly disintermediate granular human capital",
+            "h-3": "What is your favorite board game?",
+            "h-4": "Where do you plan on going for your next vacation?",
+            "h-5": "What did you learn in this past week?",
+            "h-6": "What countries have you traveled to?",
+            "h-7": "Where do you plan on going for your next vacation?"
+        }
+    },
+    "templates": [
+        {
+            "speed": "1",
+            "title": "Clothing",
+            "url": "templates/clothing.html",
+            "img": "layouts/layout-clothing.png"
+        },
+        {
+            "speed": "-1",
+            "title": "Hotel",
+            "url": "templates/hotel.html",
+            "img": "layouts/layout-hotel.png"
+        },
+        {
+            "speed": "1",
+            "title": "Furniture",
+            "url": "templates/furniture.html",
+            "img": "layouts/layout-furniture.png"
+        },
+        {
+            "speed": "1",
+            "title": "Architecture",
+            "url": "templates/architecture.html",
+            "img": "layouts/layout-architecture.png"
+        },
+        {
+            "speed": "-1",
+            "title": "Agency",
+            "url": "templates/agency.html",
+            "img": "layouts/layout-agency.png"
+        },
+        {
+            "speed": "1",
+            "title": "Corporate",
+            "url": "templates/corporate.html",
+            "img": "layouts/layout-corporate.png"
+        }
+    ],
+    "inner": [
+        {
+            "category": "Inner pages",
+            "items": [
+                {
+                    "title": "About",
+                    "url": "about.html",
+                    "img": "page-about.png"
+                },
+                {
+                    "title": "Portfolio",
+                    "url": "portfolio.html",
+                    "img": "page-portfolio.png"
+                },
+                {
+                    "title": "Services",
+                    "url": "services.html",
+                    "img": "page-services.png"
+                },
+                {
+                    "title": "Team",
+                    "url": "team.html",
+                    "img": "page-team.png"
+                },
+                {
+                    "title": "Blog",
+                    "url": "blog.html",
+                    "img": "page-blog.png"
+                },
+                {
+                    "title": "Blog fullpage",
+                    "url": "blog-2.html",
+                    "img": "page-blog-2.png"
+                }
+            ]
+        },
+        {
+            "category": "Ecommerce",
+            "items": [
+                {
+                    "title": "Products grid",
+                    "url": "products-grid-flat.html",
+                    "img": "page-products-grid.png"
+                },
+                {
+                    "title": "Products list",
+                    "url": "products-list.html",
+                    "img": "page-products-list.png"
+                },
+                {
+                    "title": "Product preview",
+                    "url": "product.html",
+                    "img": "page-product-preview-1.png"
+                },
+                {
+                    "title": "Product preview gallery",
+                    "url": "product-advanced.html",
+                    "img": "page-product-preview-2.png"
+                },
+                {
+                    "title": "Product preview flat",
+                    "url": "product-flat.html",
+                    "img": "page-product-preview-3.png"
+                },
+                {
+                    "title": "Products grid flat",
+                    "url": "products-grid-flat.html",
+                    "img": "page-products-grid-flat.png"
+                },
+                {
+                    "title": "Products list flat",
+                    "url": "products-list-flat.html",
+                    "img": "page-products-list-flat.png"
+                }
+            ]
+        },
+        {
+            "category": "Profile",
+            "items": [
+                {
+                    "title": "Profile account",
+                    "url": "profile.html",
+                    "img": "page-profile.png"
+                },
+                {
+                    "title": "Profile payment",
+                    "url": "profile-payment.html",
+                    "img": "page-profile-payment.png"
+                },
+                {
+                    "title": "Profile notifications",
+                    "url": "profile-notifications.html",
+                    "img": "page-profile-notifications.png"
+                },
+                {
+                    "title": "Profile orders",
+                    "url": "profile-orders.html",
+                    "img": "page-profile-orders.png"
+                },
+                {
+                    "title": "Profile whishlist",
+                    "url": "profile-whishlist.html",
+                    "img": "page-profile-whishlist.png"
+                }
+            ]
+        },
+        {
+            "category": "Cart",
+            "items": [
+                {
+                    "title": "Checkout",
+                    "url": "checkout.html",
+                    "img": "page-checkout.png"
+                },
+                {
+                    "title": "Checkout login",
+                    "url": "checkout-login.html",
+                    "img": "page-checkout-login.png"
+                },
+                {
+                    "title": "Checkout delivery",
+                    "url": "checkout-delivery.html",
+                    "img": "page-checkout-delivery.png"
+                },
+                {
+                    "title": "Checkout payment",
+                    "url": "checkout-payment.html",
+                    "img": "page-checkout-payment.png"
+                },
+                {
+                    "title": "Checkout receipt",
+                    "url": "checkout-receipt.html",
+                    "img": "page-checkout-receipt.png"
+                }
+            ]
+        }
+    ],
+    "navbar": {
+        "shop": [
+            {
+                "title": "Shop",
+                "links": [
+                    {
+                        "title": "Products grid",
+                        "label": "Cards grid preview",
+                        "link": "products-grid.html"
+                    },
+                    {
+                        "title": "Products list",
+                        "label": "Cards list preview",
+                        "link": "products-list.html"
+                    },
+                    {
+                        "title": "Products topbar",
+                        "label": "Card grid with top filters",
+                        "link": "products-topbar.html"
+                    },
+                    {
+                        "title": "Products grid flat <span class='badge badge-danger'>New</span>",
+                        "label": "Cards with flat filters",
+                        "link": "products-grid-flat.html"
+                    },
+                    {
+                        "title": "Products list flat",
+                        "label": "Cards with flat filters",
+                        "link": "products-list-flat.html"
+                    }
+                ]
+            },
+            {
+                "title": "Orders",
+                "links": [
+                    {
+                        "title": "Checkout",
+                        "label": "Order checkout example",
+                        "link": "checkout.html"
+                    },
+                    {
+                        "title": "Login & register",
+                        "label": "Login forms",
+                        "link": "checkout-login.html"
+                    },
+                    {
+                        "title": "Delivery",
+                        "label": "Delivery methods",
+                        "link": "checkout-delivery.html"
+                    },
+                    {
+                        "title": "Payment",
+                        "label": "Payment options",
+                        "link": "checkout-payment.html"
+                    },
+                    {
+                        "title": "Receipt",
+                        "label": "Receipt & email confirmation",
+                        "link": "checkout-receipt.html"
+                    }
+                ]
+            },
+            {
+                "title": "Product page",
+                "links": [
+                    {
+                        "title": "Product page",
+                        "label": "Simple preview",
+                        "link": "product.html"
+                    },
+                    {
+                        "title": "Product advanced",
+                        "label": "Advanced preview",
+                        "link": "product-advanced.html"
+                    },
+                    {
+                        "title": "Product flat <span class='badge badge-danger'>New</span>",
+                        "label": "Flat preview",
+                        "link": "product-flat.html"
+                    }
+                ]
+            },
+            {
+                "title": "Account",
+                "links": [
+                    {
+                        "title": "Profile page",
+                        "label": "User profile",
+                        "link": "profile.html"
+                    },
+                    {
+                        "title": "Payment options",
+                        "label": "Set default payemnt",
+                        "link": "profile-payment.html"
+                    },
+                    {
+                        "title": "Notifications",
+                        "label": "Edit alerts",
+                        "link": "profile-notifications.html"
+                    },
+                    {
+                        "title": "My Orders",
+                        "label": "Order history",
+                        "link": "profile-orders.html"
+                    },
+                    {
+                        "title": "Wishlist",
+                        "label": "Saved products",
+                        "link": "profile-whishlist.html"
+                    }
+                ]
+            }
+        ]
+    },
+    "filter": {
+        "filters-group-1": [
+            {
+                "id": "1",
+                "title": "Men",
+                "qty": "14"
+            },
+            {
+                "id": "2",
+                "title": "Woman",
+                "qty": "250"
+            },
+            {
+                "id": "3",
+                "title": "Kid's",
+                "qty": "313"
+            }
+        ],
+        "filters-group-2": [
+            {
+                "id": "1",
+                "title": "Clothing",
+                "qty": "150"
+            },
+            {
+                "id": "2",
+                "title": "Shoes",
+                "qty": "184"
+            },
+            {
+                "id": "3",
+                "title": "Bags",
+                "qty": "164"
+            },
+            {
+                "id": "4",
+                "title": "Accessories",
+                "qty": "212"
+            },
+            {
+                "id": "5",
+                "title": "Collection",
+                "qty": "50"
+            }
+        ],
+        "filters-group-3": [
+            {
+                "id": "1",
+                "title": "In stock",
+                "qty": "1250"
+            },
+            {
+                "id": "2",
+                "title": "Upcomming",
+                "qty": "245"
+            },
+            {
+                "id": "3",
+                "title": "Presale",
+                "qty": "86"
+            }
+        ]
+    },
+    "products": [
+        {
+            "id": "1",
+            "prod-id": "044349699-4",
+            "no": "314",
+            "qty": "5",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "31 Aug, 2020",
+            "title": "Coretta",
+            "price": "490",
+            "old-price": "877",
+            "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue.",
+            "img": "product-1.png"
+        },
+        {
+            "id": "2",
+            "prod-id": "567585806-7",
+            "no": "293",
+            "qty": "2",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "07 Aug, 2020",
+            "title": "Tonya",
+            "price": "419",
+            "old-price": "958",
+            "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum et ultrices posuere cubilia Curae; Donec pharetra.",
+            "img": "product-2.png"
+        },
+        {
+            "id": "3",
+            "prod-id": "571792662-6",
+            "no": "340",
+            "qty": "2",
+            "status": "Canceled",
+            "status-btn": "danger",
+            "date": "31 Aug, 2020",
+            "title": "Raven",
+            "price": "502",
+            "old-price": "857",
+            "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.",
+            "img": "product-3.png"
+        },
+        {
+            "id": "4",
+            "prod-id": "905541940-0",
+            "no": "358",
+            "qty": "4",
+            "status": "pending",
+            "status-btn": "primary",
+            "date": "13 Aug, 2020",
+            "title": "Mufi",
+            "price": "584",
+            "old-price": "838",
+            "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus primis in faucibus orci luctus.",
+            "img": "product-4.png"
+        },
+        {
+            "id": "5",
+            "prod-id": "271532298-4",
+            "no": "626",
+            "qty": "1",
+            "status": "pending",
+            "status-btn": "primary",
+            "date": "08 Jul, 2020",
+            "title": "Audrie",
+            "price": "470",
+            "old-price": "937",
+            "description": "Fusce consequat. Nulla nisl. Nunc nisl.",
+            "img": "product-5.png"
+        },
+        {
+            "id": "6",
+            "prod-id": "395612765-X",
+            "no": "378",
+            "qty": "5",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "10 Sep, 2020",
+            "title": "Kira",
+            "price": "579",
+            "old-price": "915",
+            "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+            "img": "product-6.png"
+        },
+        {
+            "id": "7",
+            "prod-id": "884547994-3",
+            "no": "471",
+            "qty": "5",
+            "status": "pending",
+            "status-btn": "primary",
+            "date": "24 Jul, 2020",
+            "title": "Dianne",
+            "price": "526",
+            "old-price": "1111",
+            "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.",
+            "img": "product-7.png"
+        },
+        {
+            "id": "8",
+            "prod-id": "596572667-8",
+            "no": "327",
+            "qty": "1",
+            "status": "Canceled",
+            "status-btn": "danger",
+            "date": "04 Aug, 2020",
+            "title": "Chery",
+            "price": "424",
+            "old-price": "901",
+            "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+            "img": "product-8.png"
+        },
+        {
+            "id": "9",
+            "prod-id": "261778742-7",
+            "no": "447",
+            "qty": "5",
+            "status": "Canceled",
+            "status-btn": "danger",
+            "date": "13 Jun, 2020",
+            "title": "Willi",
+            "price": "494",
+            "old-price": "1088",
+            "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.",
+            "img": "product-9.png"
+        },
+        {
+            "id": "10",
+            "prod-id": "620627573-6",
+            "no": "352",
+            "qty": "4",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "11 Jul, 2020",
+            "title": "Ofelia",
+            "price": "625",
+            "old-price": "876",
+            "description": "Fusce consequat. Nulla nisl. Nunc nisl augue quam, sollicitudin vitae lobortis",
+            "img": "product-10.png"
+        },
+        {
+            "id": "11",
+            "prod-id": "327376239-X",
+            "no": "644",
+            "qty": "4",
+            "status": "pending",
+            "status-btn": "primary",
+            "date": "08 Jun, 2020",
+            "title": "Janeta",
+            "price": "626",
+            "old-price": "1140",
+            "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, adipiscing elit.",
+            "img": "product-11.png"
+        },
+        {
+            "id": "12",
+            "prod-id": "269741487-8",
+            "no": "493",
+            "qty": "5",
+            "status": "pending",
+            "status-btn": "primary",
+            "date": "12 Sep, 2020",
+            "title": "Hannie",
+            "price": "518",
+            "old-price": "803",
+            "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+            "img": "product-12.png"
+        },
+        {
+            "id": "13",
+            "prod-id": "925232100-4",
+            "no": "457",
+            "qty": "2",
+            "status": "Canceled",
+            "status-btn": "danger",
+            "date": "11 Jul, 2020",
+            "title": "Alla",
+            "price": "470",
+            "old-price": "833",
+            "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis , tortor risus dapibus augue",
+            "img": "product-13.png"
+        },
+        {
+            "id": "14",
+            "prod-id": "435597913-X",
+            "no": "331",
+            "qty": "4",
+            "status": "Canceled",
+            "status-btn": "danger",
+            "date": "29 May, 2020",
+            "title": "Tisha",
+            "price": "799",
+            "old-price": "1108",
+            "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+            "img": "product-14.png"
+        },
+        {
+            "id": "15",
+            "prod-id": "796498231-1",
+            "no": "291",
+            "qty": "2",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "10 Aug, 2020",
+            "title": "Katusha",
+            "price": "602",
+            "old-price": "1136",
+            "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+            "img": "product-15.png"
+        },
+        {
+            "id": "16",
+            "prod-id": "654104316-7",
+            "no": "668",
+            "qty": "2",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "28 Aug, 2020",
+            "title": "Ruperta",
+            "price": "501",
+            "old-price": "967",
+            "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus.",
+            "img": "product-16.png"
+        },
+        {
+            "id": "17",
+            "prod-id": "814669160-9",
+            "no": "217",
+            "qty": "1",
+            "status": "Canceled",
+            "status-btn": "danger",
+            "date": "15 Aug, 2020",
+            "title": "Catlee",
+            "price": "767",
+            "old-price": "936",
+            "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet adipiscing elit.",
+            "img": "product-17.png"
+        },
+        {
+            "id": "18",
+            "prod-id": "565969831-X",
+            "no": "519",
+            "qty": "1",
+            "status": "Canceled",
+            "status-btn": "danger",
+            "date": "05 Jun, 2020",
+            "title": "Dasha",
+            "price": "436",
+            "old-price": "1061",
+            "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+            "img": "product-18.png"
+        },
+        {
+            "id": "19",
+            "prod-id": "131112673-2",
+            "no": "369",
+            "qty": "5",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "01 Sep, 2020",
+            "title": "Shaylynn",
+            "price": "687",
+            "old-price": "946",
+            "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci",
+            "img": "product-19.png"
+        },
+        {
+            "id": "20",
+            "prod-id": "183972605-9",
+            "no": "519",
+            "qty": "1",
+            "status": "Delivered",
+            "status-btn": "success",
+            "date": "09 Sep, 2020",
+            "title": "Glenna",
+            "price": "794",
+            "old-price": "900",
+            "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+            "img": "product-20.png"
+        }
+    ],
+    "payment": [
+        {
+            "id": "1",
+            "icon": "visa",
+            "card": "Visa",
+            "date": "08 Jul, 2020",
+            "name": "John Doe",
+            "end": "08/23"
+        },
+        {
+            "id": "2",
+            "icon": "mastercard",
+            "card": "MasterCard",
+            "date": "08 Jul, 2020",
+            "name": "John Doe",
+            "end": "08/23"
+        },
+        {
+            "id": "3",
+            "icon": "jcb",
+            "card": "JCB",
+            "date": "08 Jul, 2020",
+            "name": "John Doe",
+            "end": "01/19"
+        },
+        {
+            "id": "4",
+            "icon": "discover",
+            "card": "Discover",
+            "date": "08 Jul, 2020",
+            "name": "John Doe",
+            "end": "04/21"
+        },
+        {
+            "id": "5",
+            "icon": "diners-club",
+            "card": "DinnersClub",
+            "date": "08 Jul, 2020",
+            "name": "John Doe",
+            "end": "04/21"
+        },
+        {
+            "id": "6",
+            "icon": "amex",
+            "card": "AmericanExpress",
+            "date": "08 Jul, 2020",
+            "name": "John Doe",
+            "end": "04/21"
+        }
+    ],
+    "jobs": [
+        {
+            "title": "Truck driver",
+            "city": "Berlin"
+        },
+        {
+            "title": "Data analyst",
+            "city": "Amsterdam"
+        },
+        {
+            "title": "Customer support",
+            "city": "London"
+        },
+        {
+            "title": "Marketing manager",
+            "city": "Paris"
+        },
+        {
+            "title": "Software developer",
+            "city": "Barcelona"
+        }
+    ],
+    "rooms": [
+        {
+            "img": "room-1.jpg",
+            "title": "Presidential Suite",
+            "type": "Family apartment",
+            "price": "299"
+        },
+        {
+            "img": "room-2.jpg",
+            "title": "Luxury apartment",
+            "type": "Business lounge",
+            "price": "199"
+        },
+        {
+            "img": "room-3.jpg",
+            "title": "Classic Room",
+            "type": "Double room",
+            "price": "99"
+        },
+        {
+            "img": "room-4.jpg",
+            "title": "Superior Room",
+            "type": "Queen size bed",
+            "price": "149"
+        },
+        {
+            "img": "room-5.jpg",
+            "title": "Double room",
+            "type": "Family apartment",
+            "price": "129"
+        },
+        {
+            "img": "room-3.jpg",
+            "title": "Single Room",
+            "type": "Club room",
+            "price": "69"
+        }
+    ],
+    "clothing": {
+        "shoes": [
+            {
+                "img": "shoe-1.jpg",
+                "img-hover": "shoe-1a.jpg",
+                "title": "Coretta",
+                "price": "$490",
+                "old-price": "$875"
+            },
+            {
+                "img": "shoe-2.jpg",
+                "img-hover": "shoe-2a.jpg",
+                "title": "Tonya",
+                "price": "$419",
+                "old-price": "$957"
+            },
+            {
+                "img": "shoe-3.jpg",
+                "img-hover": "shoe-3a.jpg",
+                "title": "Raven",
+                "price": "$502",
+                "old-price": "$851"
+            },
+            {
+                "img": "shoe-4.jpg",
+                "img-hover": "shoe-4a.jpg",
+                "title": "Mufi",
+                "price": "$584",
+                "old-price": "$838"
+            }
+        ],
+        "jackets": [
+            {
+                "img": "cloth-1.jpg",
+                "img-hover": "cloth-1a.jpg",
+                "title": "Coretta",
+                "price": "$490",
+                "old-price": "$875"
+            },
+            {
+                "img": "cloth-2.jpg",
+                "img-hover": "cloth-2a.jpg",
+                "title": "Tonya",
+                "price": "$419",
+                "old-price": "$957"
+            },
+            {
+                "img": "cloth-3.jpg",
+                "img-hover": "cloth-3a.jpg",
+                "title": "Raven",
+                "price": "$502",
+                "old-price": "$851"
+            },
+            {
+                "img": "cloth-4.jpg",
+                "img-hover": "cloth-4a.jpg",
+                "title": "Mufi",
+                "price": "$584",
+                "old-price": "$838"
+            }
+        ],
+        "categories": {
+            "clothes": [
+                {
+                    "name": "Jackets"
+                },
+                {
+                    "name": "Coats"
+                },
+                {
+                    "name": "West"
+                },
+                {
+                    "name": "Pullover"
+                },
+                {
+                    "name": "Sweatshirts"
+                },
+                {
+                    "name": "Hoodies"
+                },
+                {
+                    "name": "Wheelchairs"
+                },
+                {
+                    "name": "Long sleeve shirts"
+                },
+                {
+                    "name": "Blouses"
+                },
+                {
+                    "name": "Shirts"
+                },
+                {
+                    "name": "T-shirts"
+                },
+                {
+                    "name": "Polo shirts"
+                },
+                {
+                    "name": "Tanks & Tops"
+                },
+                {
+                    "name": "Jerseys"
+                },
+                {
+                    "name": "Accessories"
+                },
+                {
+                    "name": "Swimwear"
+                },
+                {
+                    "name": "Underwear"
+                },
+                {
+                    "name": "Pants"
+                },
+                {
+                    "name": "clothes"
+                },
+                {
+                    "name": "Skirts"
+                },
+                {
+                    "name": "Ski suits"
+                },
+                {
+                    "name": "Socks"
+                },
+                {
+                    "name": "Tracksuits"
+                }
+            ],
+            "shoes": [
+                {
+                    "name": "Running shoes"
+                },
+                {
+                    "name": "Sneaker"
+                },
+                {
+                    "name": "Outdoor shoes"
+                },
+                {
+                    "name": "Soccer shoes"
+                },
+                {
+                    "name": "Indoor shoes"
+                },
+                {
+                    "name": "Bathing shoes"
+                },
+                {
+                    "name": "tennis shoes"
+                },
+                {
+                    "name": "Cycling shoes"
+                },
+                {
+                    "name": "Winter shoes"
+                },
+                {
+                    "name": "Boots & Boots"
+                },
+                {
+                    "name": "Climbing shoes"
+                },
+                {
+                    "name": "Snowshoes"
+                },
+                {
+                    "name": "Golf shoes"
+                }
+            ],
+            "equipment": [
+                {
+                    "name": "Hiking"
+                },
+                {
+                    "name": "Fitness"
+                },
+                {
+                    "name": "Camping gear"
+                },
+                {
+                    "name": "Running gear"
+                },
+                {
+                    "name": "Soccer"
+                },
+                {
+                    "name": "Cycling"
+                },
+                {
+                    "name": "Water sports"
+                },
+                {
+                    "name": "Tennis"
+                },
+                {
+                    "name": "Nordic walking"
+                },
+                {
+                    "name": "Climbing"
+                },
+                {
+                    "name": "Mats & pillows"
+                },
+                {
+                    "name": "Hydration systems"
+                },
+                {
+                    "name": "Recreational games"
+                },
+                {
+                    "name": "Boards"
+                },
+                {
+                    "name": "Ski"
+                },
+                {
+                    "name": "Martial arts"
+                },
+                {
+                    "name": "Basketball"
+                },
+                {
+                    "name": "Volleyball"
+                },
+                {
+                    "name": "Badminton"
+                },
+                {
+                    "name": "Table tennis"
+                },
+                {
+                    "name": "Ice hockey"
+                },
+                {
+                    "name": "Squash"
+                },
+                {
+                    "name": "Lamps"
+                },
+                {
+                    "name": "First aid"
+                },
+                {
+                    "name": "Snowboard"
+                },
+                {
+                    "name": "Figure skating"
+                },
+                {
+                    "name": "Sledge"
+                },
+                {
+                    "name": "Handball"
+                },
+                {
+                    "name": "Skates"
+                }
+            ]
+        }
+    },
+    "users": [
+        {
+            "name": "John",
+            "lastname": "Bayly",
+            "position": "CEO",
+            "img": "assets/images/demo/user-1.jpg"
+        },
+        {
+            "name": "Emma",
+            "lastname": "Mance",
+            "position": "Manager",
+            "img": "assets/images/demo/user-2.jpg"
+        },
+        {
+            "name": "William",
+            "lastname": "Kores",
+            "position": "Designer",
+            "img": "assets/images/demo/user-3.jpg"
+        },
+        {
+            "name": "Sophia",
+            "lastname": "Guess",
+            "position": "Architect",
+            "img": "assets/images/demo/user-4.jpg"
+        },
+        {
+            "name": "Lanny",
+            "lastname": "Stanway",
+            "position": "SEO",
+            "img": "assets/images/demo/user-5.jpg"
+        },
+        {
+            "name": "Anna",
+            "lastname": "Genicke",
+            "position": "Administration",
+            "img": "assets/images/demo/user-6.jpg"
+        },
+        {
+            "name": "James",
+            "lastname": "Tomasek",
+            "position": "Designer",
+            "img": "assets/images/demo/user-7.jpg"
+        },
+        {
+            "name": "Megan",
+            "lastname": "Jacobsohn",
+            "position": "Developer",
+            "img": "assets/images/demo/user-8.jpg"
+        },
+        {
+            "name": "Luna",
+            "lastname": "Riddel",
+            "position": "Consultant",
+            "img": "assets/images/demo/user-9.jpg"
+        },
+        {
+            "name": "Harley",
+            "lastname": "Conroy",
+            "position": "PR",
+            "img": "assets/images/demo/user-10.jpg"
+        }
+    ],
+    "news": [
+        {
+            "img": "1.jpg",
+            "title": "Home Organizers that Add Color to Your Space",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        },
+        {
+            "img": "x1.jpg",
+            "title": "How to Use Room Dividers in Small Spaces",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        },
+        {
+            "img": "2.jpg",
+            "title": "Get a notification when your kids walk in the door",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        },
+        {
+            "img": "3.jpg",
+            "title": "Open your shades with a simple voice command",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        },
+        {
+            "img": "x2.jpg",
+            "title": "Automatically lock the front door when you head to work",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        },
+        {
+            "img": "4.jpg",
+            "title": "Lorem ipsum dolor isum",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        },
+        {
+            "img": "x4.jpg",
+            "title": "Everything you need to know about vaccinations",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        },
+        {
+            "img": "6.jpg",
+            "title": "Six simple ways to save money on airport car parking",
+            "desc": "Sed eget erat justo. Curabitur scelerisque sagittis molestie. Nunc sit amet porttitor odio."
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+<div class="d-flex justify-content-between">
+
+    {{> comment title="Left"}}
+
+    <div>
+        <div class="form-inline">
+            <div class="form-group mb-0">
+                <select class="form-control form-control-sm" id="exampleFormControlSelect1">
+                    <option>20</option>
+                    <option>50</option>
+                    <option>100</option>
+                    <option>All</option>
+                </select>
+                <label for="exampleFormControlSelect1" class="ml-3 d-none d-lg-block"><small>Showing all 24 of 128 products</small></label>
+            </div>
+        </div>
+    </div>
+
+    {{> comment title="Right"}}
+
+    <div>
+        <div class="form-inline">
+            <div class="mr-2">
+                {{#ifpage 'products-list-flat' 'products-grid-flat'}}
+                <a href="products-grid-flat.html" class="btn btn-sm {{#ifpage 'products-grid-flat'}} text-primary{{/ifpage}}" data-toggle="tooltip" data-placement="top" title="Grid view">
+                    <i class="fa fa-th-large"></i>
+                </a>
+                <a href="products-list-flat.html" class="btn btn-sm {{#ifpage 'products-list-flat'}} text-primary{{/ifpage}}" data-toggle="tooltip" data-placement="top" title="List view">
+                    <i class="fa fa-list-ul"></i>
+                </a>
+                {{/ifpage}}
+                {{#ifpage 'products-list' 'products-grid'}}
+                <a href="products-grid.html" class="btn btn-sm {{#ifpage 'products-grid'}} text-primary{{/ifpage}}" data-toggle="tooltip" data-placement="top" title="Grid view">
+                    <i class="fa fa-th-large"></i>
+                </a>
+                <a href="products-list.html" class="btn btn-sm {{#ifpage 'products-list'}} text-primary{{/ifpage}}" data-toggle="tooltip" data-placement="top" title="List view">
+                    <i class="fa fa-list-ul"></i>
+                </a>
+                {{/ifpage}}
+            </div>
+            <div class="form-group mb-0">
+                <label for="exampleFormControlSelect2" class="mr-3 d-none d-lg-block"><small>Sort by</small></label>
+                <select class="form-control form-control-sm" id="exampleFormControlSelect2">
+                    <option>Name</option>
+                    <option>Price</option>
+                </select>
+            </div>
+            <div class="d-lg-none ml-2">
+                <button class="btn btn-primary btn-sm toggle-show" data-show="open-mobile-filters">
+                    <strong>
+                        <i class="icon icon-text-align-center"></i>
+                        <span class="d-none d-sm-inline-block">Filters</span>
+                    </strong>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

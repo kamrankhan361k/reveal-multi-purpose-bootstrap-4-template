@@ -1,0 +1,12 @@
+/*  
+    --------
+    Headings
+    --------
+*/
+@include headings {
+    font-family: $font-family-heading;
+
+    @include media-breakpoint-down(sm) {
+        line-height: 1.2;
+    }
+}

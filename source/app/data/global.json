@@ -1,0 +1,17 @@
+{
+	"site": {
+		"title": "Reveal",
+		"name": "HTML Template",
+		"description": "Extended Bootstrap 4 Template",
+		"author": "Goran Hrustic",
+		"keywords": "reveal, template, bootsrap",
+		"copyright": "All rights reserved 2020 © Reveal",
+		"helpdesk": "http://helpdesk.elathemes.com/",
+		"purchase": "https://themeforest.net/item/reveal-responsive-multipurpose-ecommerce-bootstrap-html-template/29644121"
+	},
+	"settings": {
+		"production": false,
+		"layouts": false,
+		"version": "6"
+	}
+}

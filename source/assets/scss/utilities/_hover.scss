@@ -1,0 +1,14 @@
+/*  
+    ------------------
+    Lift
+    -----------------
+*/
+.lift {
+    position: relative;
+    @include duration-2;
+
+    &:hover {
+        @include translate-top-sm;
+        @include box-shadow-lg;
+    }
+}

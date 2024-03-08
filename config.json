@@ -1,0 +1,24 @@
+{
+    "SOURCE": {
+        "src": "source",
+        "src_js": "source/assets/js",
+        "src_css": "source/assets/scss",
+        "prod": "html",
+        "prod_js": "html/js",
+        "prod_css": "html/css",
+        "prod_img": "html/assets/images/"
+    },
+    "APP": {
+        "root": "source/app/pages",
+        "layouts": "source/app/layout",
+        "partials": "source/app/partials/",
+        "helpers": "source/app/helpers/",
+        "data": "source/app/data/"
+    },
+    "COPY": {
+        "js": "source/assets/js/**",
+        "css": "source/assets/css/**",
+        "img": "source/assets/images/**",
+        "svg": "source/assets/svg/**"
+    }
+}

@@ -1,0 +1,26 @@
+/*  
+    --------------
+    Row stretcher
+    --------------
+*/
+.row-stretcher {
+    > .col,
+    > [class*="col-"] {
+        @include duration-4;
+
+        @include media-breakpoint-up(md) {
+            & {
+                &:hover {
+                    flex-grow: 2;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(md) {
+            & {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}

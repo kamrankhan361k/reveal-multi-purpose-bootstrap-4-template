@@ -1,0 +1,25 @@
+/*  
+    --------------
+    Figures
+    --------------
+*/
+.figure-zoom {
+    .figure-img-wrapper {
+        overflow: hidden;
+        margin-bottom: $spacing-xs;
+
+        .figure-img {
+            margin-bottom: 0;
+        }
+    }
+
+    &:hover {
+        .figure-img {
+            @include transform(scale(1.1));
+        }
+    }
+
+    .figure-img {
+        @include duration-2;
+    }
+}

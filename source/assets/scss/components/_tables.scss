@@ -1,0 +1,18 @@
+/*  
+    --------------
+    Tables
+    --------------
+*/
+@include dark-mode {
+    .table {
+        background-color: $body-bg-dark;
+        color: $body-color-dark;
+    }
+
+    .table-bordered {
+        th,
+        td {
+            border-color: $table-dark-border-color;
+        }
+    }
+}

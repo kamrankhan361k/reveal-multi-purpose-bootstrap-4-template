@@ -1,0 +1,45 @@
+{{> comment title="Reply"}}
+
+<div class="py-3 py-lg-4">
+
+    {{> comment title="Reply header"}}
+
+    <header>
+        <div class="h3 mb-1">Leave a Reply</div>
+        <p class="text-muted"><small>Your email address will not be published.</small></p>
+    </header>
+
+    {{> comment title="Reply form"}}
+
+    <div class="pt-3 pt-lg-4">
+        <form>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="label" for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label class="label" for="exampleInputName1">Your name</label>
+                        <input type="password" class="form-control" id="exampleInputName1">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="label" for="exampleComment">Comment</label>
+                <textarea class="form-control" name="" id="exampleComment" cols="20" rows="4"></textarea>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="custom-control custom-checkbox custom-control-light">
+                    <input type="checkbox" class="custom-control-input" id="customCheckTheme1">
+                    <label class="custom-control-label" for="customCheckTheme1">Notify me on reply</label>
+                </div>
+                <button type="submit" class="btn link link-right link-dark"><strong>Send reply</strong></button>
+            </div>
+        </form>
+    </div>
+
+</div>

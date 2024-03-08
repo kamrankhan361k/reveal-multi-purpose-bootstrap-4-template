@@ -1,0 +1,28 @@
+/*  
+    --------------
+    Typography
+    --------------
+*/
+.font-family-serif {
+    font-family: $font-family-serif!important;
+}
+
+.font-family-body {
+    font-family: $font-family-body!important;
+}
+
+.font-family-heading {
+    font-family: $font-family-heading!important;
+}
+
+.font-size-base {
+    font-size: $font-size-base;
+}
+
+.font-size-lg {
+    font-size: $font-size-lg;
+}
+
+.font-size-xl {
+    font-size: $font-size-lg * 1.5;
+}

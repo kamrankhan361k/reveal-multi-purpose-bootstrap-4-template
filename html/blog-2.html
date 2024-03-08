@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Mobile Web-app fullscreen -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Meta tags -->
+
+    <meta name="description" content="Extended Bootstrap 4 Template">
+    <meta name="author" content="Goran Hrustic">
+    <link rel="icon" href="assets/svg/favicon.ico">
+
+    <!-- Title -->
+
+    <title>Reveal - Blog</title>
+
+    <!-- Vendor stylesheets -->
+
+    <link rel="stylesheet" media="all" href="css/vendor/animate.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/jquery.lavalamp.css" />
+
+    <!-- Template stylesheets -->
+
+    <link rel="stylesheet" media="all" href="css/style.css" />
+
+    <!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+</head>
+
+<body>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Main navigation -->
+    
+    <nav class="bg-white navbar navbar-expand-lg">
+        <div class="container">
+    
+            <!-- Logo -->
+    
+            <a class="navbar-brand mr-1" href="index.html">
+                <img src="assets/svg/reveal-logo.svg" alt="">
+            </a>
+    
+            <!-- Collapse -->
+    
+            <div class="collapse navbar-collapse navbar-collapse-sidebar" id="mainNavbar">
+    
+                <!-- Mobile search -->
+    
+                <div class="d-block d-lg-none">
+                    <div class="p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="assets/svg/reveal-symbol.svg" alt="">
+                            <button class="btn p-0" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon icon-cross font-size-lg"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-light">
+                        <div class="form-group form-group-icon">
+                            <input type="text" class="form-control form-control-simple" placeholder="Search site">
+                            <button class="btn btn-clean"><i class="icon icon-magnifier"></i></button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Navbar links -->
+    
+                <ul class="navbar-nav ml-auto">
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+    
+                    <!-- Single dropdown -->
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pages">
+                            <a class="dropdown-item" href="landing-pages.html">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="px-1">
+                                            <i class="icon icon-book"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Landing pages</p>
+                                            <span class="label">Pre-maded templates</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="inner-pages.html">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1">
+                                            <i class="icon icon-layers"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Inner pages</p>
+                                            <span class="label">Combine with everything</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+    
+                    <!-- Mega dropdown -->
+    
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="ecommerce" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+    
+                        <div class="dropdown-menu w-100 bg-white border-top" aria-labelledby="ecommerce">
+                            <div class="py-3 px-lg-4 py-lg-5">
+                                <div class="container d-block p-0">
+                                    <div class="row">
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Shop
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-grid.html">
+                                                <p>Products grid</p>
+                                                <span class="label">Cards grid preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-list.html">
+                                                <p>Products list</p>
+                                                <span class="label">Cards list preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-topbar.html">
+                                                <p>Products topbar</p>
+                                                <span class="label">Card grid with top filters</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-grid-flat.html">
+                                                <p>Products grid flat <span class='badge badge-danger'>New</span></p>
+                                                <span class="label">Cards with flat filters</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-list-flat.html">
+                                                <p>Products list flat</p>
+                                                <span class="label">Cards with flat filters</span>
+                                            </a>
+    
+                                        </div>
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Orders
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout.html">
+                                                <p>Checkout</p>
+                                                <span class="label">Order checkout example</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-login.html">
+                                                <p>Login & register</p>
+                                                <span class="label">Login forms</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-delivery.html">
+                                                <p>Delivery</p>
+                                                <span class="label">Delivery methods</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-payment.html">
+                                                <p>Payment</p>
+                                                <span class="label">Payment options</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-receipt.html">
+                                                <p>Receipt</p>
+                                                <span class="label">Receipt &amp; email confirmation</span>
+                                            </a>
+    
+                                        </div>
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Product page
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="product.html">
+                                                <p>Product page</p>
+                                                <span class="label">Simple preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="product-advanced.html">
+                                                <p>Product advanced</p>
+                                                <span class="label">Advanced preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="product-flat.html">
+                                                <p>Product flat <span class='badge badge-danger'>New</span></p>
+                                                <span class="label">Flat preview</span>
+                                            </a>
+    
+                                        </div>
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Account
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile.html">
+                                                <p>Profile page</p>
+                                                <span class="label">User profile</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-payment.html">
+                                                <p>Payment options</p>
+                                                <span class="label">Set default payemnt</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-notifications.html">
+                                                <p>Notifications</p>
+                                                <span class="label">Edit alerts</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-orders.html">
+                                                <p>My Orders</p>
+                                                <span class="label">Order history</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-whishlist.html">
+                                                <p>Wishlist</p>
+                                                <span class="label">Saved products</span>
+                                            </a>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <!-- Single dropdown -->
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="support" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Support
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="support">
+                            <a class="dropdown-item" href="../documentation/index.html">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1 text-primary">
+                                            <i class="icon icon-book"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Documentation</p>
+                                            <span class="label">Examples and guidelines</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="http://helpdesk.elathemes.com/" target="_blank">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1 text-danger">
+                                            <i class="icon icon-heart-pulse"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Helpdesk</p>
+                                            <span class="label">Create ticket</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="https://themeforest.net/item/reveal-responsive-multipurpose-ecommerce-bootstrap-html-template/29644121" target="_blank">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1 text-dark">
+                                            <i class="icon icon-cart"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Get licence</p>
+                                            <span class="label">Buy this template</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+    
+                    <!-- Links mobile -->
+    
+                    <li class="nav-item d-block d-lg-none">
+                        <hr>
+                        <a href="#" class="nav-link"><small>Documentation</small></a>
+                        <a href="#" class="nav-link"><small>Helpdesk</small></a>
+                        <a href="#" class="nav-link"><small>About us</small></a>
+                        <hr>
+                        <div class="row row-sm">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-block btn-sm btn-outline-secondary">
+                                    <i class="icon icon-map"></i>
+                                    <span>Find store</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="btn btn-block btn-sm btn-outline-secondary">
+                                    <i class="icon icon-phone-handset"></i>
+                                    <span>Call us</span>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </li>
+    
+                </ul>
+            </div>
+    
+            <!-- Navbar toggler -->
+    
+            <div class="d-flex align-items-center">
+                <a class="btn btn-sm btn-primary btn-rounded ml-lg-4 px-3" href="https://themeforest.net/item/reveal-responsive-multipurpose-ecommerce-bootstrap-html-template/29644121">
+                    <i class="icon icon-cart"></i> Purchase
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon icon-menu"></span>
+                </button>
+            </div>
+    
+        </div>
+    </nav>
+
+
+    <hr class="m-0">
+    
+    <!-- Header -->
+    
+    <header class="bg-light py-4 py-lg-5">
+        <div class="pb-2 py-lg-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-0 h4">Latest articles</h2>
+                        <small class="pre-label d-none d-lg-block">News archive</small>
+                    </div>
+                    <div class="col-lg-4 text-lg-right pt-2 pt-lg-0">
+                        <ol class="breadcrumb justify-content-lg-end">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Library</a></li>
+                            <li class="breadcrumb-item"><a href="#">Category</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <hr class="m-0">
+    
+    <!-- Blog content -->
+    
+    <section class="bg-white py-4 py-lg-5">
+        <div class="container">
+    
+            <!-- Articles -->
+            
+            <div class="row istp-wrap istp-wrap-vertical">
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">Home Organizers that Add Color to Your Space</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/x1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span class="badge badge-danger mr-2">Promo</span>
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">How to Use Room Dividers in Small Spaces</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">Get a notification when your kids walk in the door</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">Open your shades with a simple voice command</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/x2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">Automatically lock the front door when you head to work</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">Lorem ipsum dolor isum</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/x4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span class="badge badge-success mr-2">Ad</span>
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">Everything you need to know about vaccinations</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="istp col-sm-6 col-lg-4">
+                    <div class="card card-box mb-3 mb-lg-5 br-sm">
+                        <div class="card-image">
+                            <img src="assets/images/general/6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body card-body-top text-white">
+                                <div class="pre-label pre-label-primary mb-2">
+                                    <span>Category</span>
+                                </div>
+                                <h4 class="card-title mb-3">
+                                    <a href="#" class="text-white">Six simple ways to save money on airport car parking</a>
+                                </h4>
+                                <div class="card-text">
+                                    <a href="#" class="link link-right link-light">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+    
+            <!-- Pagination -->
+            
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center py-3 py-lg-4">
+                    <li class="page-item disabled">
+                        <a class="page-link page-link-first" href="#" tabindex="-1" aria-disabled="true">Prev</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-between align-items-end text-center text-md-left">
+    
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <a href="../documentation/index.html" class="link link-underline link-light mr-3"><i class="icon icon-book"></i> Documentation</a>
+                    <a href="http://helpdesk.elathemes.com/" class="link link-underline link-light mr-3"><i class="icon icon-heart-pulse"></i> Help</a>
+                </div>
+    
+                <div class="col-md-6 text-md-right">
+                    <a href="https://themeforest.net/item/reveal-responsive-multipurpose-ecommerce-bootstrap-html-template/29644121" class="btn btn-outline-light btn-rounded btn-sm px-3">
+                        <i class="icon icon-cart"></i> Get the licence
+                    </a>
+                </div>
+    
+            </div>
+    
+            <div class="pt-5 text-muted text-center">
+                <div class="mb-3"><img src="assets/svg/reveal-logo.svg" alt=""></div>
+                <div><small class="text-muted pre-label">A bold visual experience</small></div>
+                <small>All rights reserved 2020 © Reveal</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vendor Scripts -->
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.js"></script>
+    <script src="js/vendor/in-view.min.js"></script>
+    <script src="js/vendor/jquery.lavalamp.js"></script>
+    <script src="js/vendor/owl.carousel.js"></script>
+    <script src="js/vendor/rellax.js"></script>
+    <script src="js/vendor/wow.js"></script>
+    <script src="js/vendor/tabzy.js"></script>
+    <script src="js/vendor/isotope.pkgd.js"></script>
+
+    <!-- Template Scripts -->
+
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+
+    </body>
+
+</html>

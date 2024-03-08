@@ -1,0 +1,38 @@
+---
+divider-bg: dark
+divider-svg: light
+demo: true
+page-title: Products topbar
+page-subtitle: Grid listing with filters on top
+---
+{{> product-filter-topbar}}
+
+{{> comment title="Products collection"}}
+
+<section class="pt-0">
+    <div class="container">
+        <div class="row gutters-mobile">
+
+            {{#each (take data.products 12)}}
+            <div class="col-6 col-xl-3">
+                <div class="card card-fill border-0 mb-2 mb-lg-4 shadow-sm">
+                    <div class="card-body pb-0 text-center">
+                        <h2 class="card-title mb-2 h4">
+                            <a href="products-grid.html" class="text-dark">{{title}}</a>
+                        </h2>
+                    </div>
+                    <div class="card-image">
+                        <a href="products-grid.html" class="d-inline-block">
+                            <img src="{{../data.img}}/demo/{{img}}" class="card-img-top" alt="Product image">
+                        </a>
+                    </div>
+                    <div class="card-footer text-center pb-5">
+                        <small class="text-muted">{{no}} Products</small>
+                    </div>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+    </div>
+</section>

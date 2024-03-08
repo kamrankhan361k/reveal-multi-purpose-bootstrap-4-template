@@ -1,0 +1,74 @@
+/*  
+    --------------
+    Blockquote
+    --------------
+*/
+.blockquote {
+    padding-left: 3rem;
+    border-left: 1px solid rgba($black, 0.5);
+}
+
+.blockquote-flat {
+    position: relative;
+    padding: $spacing-lg $spacer * 3 $spacing-lg 0;
+    border-top: 1px solid rgba($dark, 0.5);
+    border-bottom: 1px solid rgba($dark, 0.5);
+
+    &:after {
+        font-family: "LinearIcons";
+        position: absolute;
+        content: "\e83f";
+        font-size: 3rem;
+        right: 0;
+        top: 0;
+    }
+
+    &.blockquote-flat-light {
+        border-color: rgba($white, 0.5);
+        color: $white;
+    }
+}
+
+.blockquote-prime {
+    position: relative;
+    padding: 0 $spacer * 2;
+
+    @include media-breakpoint-up(lg) {
+        & {
+            padding: 0 $spacer * 5;
+        }
+    }
+
+    * {
+        font-family: serif !important;
+    }
+
+    &:before,
+    &:after {
+        font-family: serif;
+        position: absolute;
+        font-size: 4rem;
+        width: 2rem;
+        height: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            & {
+                font-size: 6rem;
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+    &:before {
+        content: "“";
+        left: 0;
+        top: -2rem;
+    }
+
+    &:after {
+        content: "”";
+        right: 0;
+        bottom: 1rem;
+    }
+}

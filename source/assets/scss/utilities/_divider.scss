@@ -1,0 +1,83 @@
+/*  
+    --------------
+    Divider
+    --------------
+*/
+.divider {
+    @include reset-spacing;
+
+    .svg {
+        width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+
+    @each $color, $value in $theme-colors {
+        .svg-#{$color} {
+            &,
+            * {
+                fill: $value;
+            }
+        }
+    }
+
+    .svg-white {
+        fill: $white;
+    }
+
+    .svg-black {
+        fill: $black;
+    }
+}
+/*  
+    --------------
+    Line divider
+    --------------
+*/
+.line-divider {
+    overflow: hidden;
+
+    > * {
+        @include box-shadow(-1px -1px 0px 0px $border-color);
+    }
+}
+/*  
+    -------------------
+    Divider separator
+    -------------------
+*/
+.divider-separator {
+    text-align: center;
+    padding: $spacer * 2 0;
+
+    > span {
+        position: relative;
+        padding: 0 $spacer;
+        text-align: center;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: $small-font-size;
+
+        &:before {
+            left: 100%;
+        }
+
+        &:after {
+            right: 100%;
+        }
+
+        &:before,
+        &:after {
+            background-color: $border-color;
+            position: absolute;
+            content: "";
+            width: 50px;
+            height: 1px;
+            top: 50%;
+        }
+    }
+}
+
+.divider-separator-sm {
+    padding: $spacer 0;
+}

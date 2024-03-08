@@ -1,0 +1,16 @@
+/*  
+    ---------
+    Positions
+    ---------
+*/
+.absolute-full {
+    @include absolute-full;
+}
+
+@each $breakpoint, $value in $grid-breakpoints {
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+        .absolute-full-#{$breakpoint} {
+            @include absolute-full;
+        }
+    }
+}

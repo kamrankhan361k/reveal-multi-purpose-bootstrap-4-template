@@ -1,0 +1,284 @@
+// --------------------------------------------------
+// Display
+// --------------------------------------------------
+
+@mixin flex($value) {
+    -ms-flex: $value;
+    -webkit-flex: $value;
+    flex: $value;
+}
+
+@mixin table {
+    display: table;
+    width: 100%;
+}
+
+@mixin table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+// --------------------------------------------------
+// Social buttons
+// --------------------------------------------------
+
+@mixin btn-social($color-bg, $color: white) {
+    @include button-variant($color, $color-bg);
+}
+
+// --------------------------------------------------
+// Headings
+// --------------------------------------------------
+
+@mixin headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        @content;
+    }
+}
+
+// --------------------------------------------------
+// Dark mode
+// --------------------------------------------------
+
+@mixin dark-mode {
+    [data-theme="dark"] {
+        @content;
+    }
+}
+
+@mixin filter($value) {
+    -moz-filter: $value;
+    -ms-filter: $value;
+    -webkit-filter: $value;
+    filter: $value;
+}
+@mixin backdrop-filter($value) {
+    backdrop-filter: $value;
+    -webkit-backdrop-filter: $value;
+}
+
+// --------------------------------------------------
+// Display
+// --------------------------------------------------
+
+@mixin absolute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin absolute-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+@mixin absolute-full {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+// --------------------------------------------------
+// Transform & transition proprety
+// --------------------------------------------------
+
+@mixin transform($value) {
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+    -webkit-transform: $value;
+    transform: $value;
+}
+
+@mixin transition($value) {
+    @if $enable-transitions {
+        -moz-transition: $value;
+        -o-transition: $value;
+        -webkit-transition: $value;
+        transition: $value;
+    }
+}
+
+@mixin transformOrigin($value) {
+    -moz-transform-origin: $value;
+    -ms-transform-origin: $value;
+    -o-transform-origin: $value;
+    -webkit-transform-origin: $value;
+    transform-origin: $value;
+}
+
+@mixin delay($value) {
+    -moz-transition-delay: $value;
+    -o-transition-delay: $value;
+    -webkit-transition-delay: $value;
+    transition-delay: $value;
+}
+
+@mixin animationName($value) {
+    -moz-animation-name: $value;
+    -o-animation-name: $value;
+    -webkit-animation-name: $value;
+    animation-name: $value;
+}
+
+@mixin animationTiming($value) {
+    -moz-animation-timing-function: $value;
+    -o-animation-timing-function: $value;
+    -webkit-animation-timing-function: $value;
+    animation-timing-function: $value;
+}
+
+@mixin animationDuration($value) {
+    -moz-animation-duration: $value;
+    -o-animation-duration: $value;
+    -webkit-animation-duration: $value;
+    animation-duration: $value;
+}
+// ---------------------------------------------------
+// Transitions
+// ---------------------------------------------------
+@mixin duration-2 {
+    @include transition(all 0.2s);
+}
+
+@mixin duration-4 {
+    @include transition(all 0.4s);
+}
+
+@mixin duration-6 {
+    @include transition(all 0.6s);
+}
+
+// ---------------------------------------------------
+// Transforms
+// ---------------------------------------------------
+
+@mixin translate-start {
+    @include transform(translate3d(0, 0, 0));
+}
+
+@mixin translate-top {
+    @include transform(translate3d(0, -100%, 0));
+}
+
+@mixin translate-top-50 {
+    @include transform(translate3d(0, -50%, 0));
+}
+
+@mixin translate-top-sm {
+    @include transform(translate3d(0, -10px, 0));
+}
+
+@mixin translate-left {
+    @include transform(translate3d(-100%, 0, 0));
+}
+
+@mixin translate-left-50 {
+    @include transform(translate3d(-50%, 0, 0));
+}
+
+@mixin translate-left-sm {
+    @include transform(translate3d(-10px, 0, 0));
+}
+
+@mixin translate-right {
+    @include transform(translate3d(100%, 0, 0));
+}
+
+@mixin translate-right-50 {
+    @include transform(translate3d(50%, 0, 0));
+}
+
+@mixin translate-right-sm {
+    @include transform(translate3d(10px, 0, 0));
+}
+
+@mixin translate-bottom {
+    @include transform(translate3d(0, 100%, 0));
+}
+
+@mixin translate-bottom-50 {
+    @include transform(translate3d(0, 50%, 0));
+}
+
+@mixin translate-bottom-sm {
+    @include transform(translate3d(0, 10px, 0));
+}
+
+// ---------------------------------------------------
+// Margin & padding reset
+// ---------------------------------------------------
+
+@mixin reset-spacing {
+    margin: 0;
+    padding: 0;
+}
+
+// ---------------------------------------------------
+// Radius
+// ---------------------------------------------------
+
+@mixin radius($amount) {
+    -moz-border-radius: $amount;
+    -webkit-border-radius: $amount;
+    border-radius: $amount;
+}
+
+@mixin radiusXs {
+    @include radius(0.1875rem); // approx 3px
+}
+
+@mixin radiusSm {
+    @include radius(0.375rem); // approx 6px
+}
+
+@mixin radiusMd {
+    @include radius(0.625rem); // approx 10px
+}
+
+@mixin radiusLg {
+    @include radius(1rem); //  approx 16px
+}
+
+@mixin radiusXl {
+    @include radius(2rem); // approx 32px
+}
+
+// ---------------------------------------------------
+// Box shaddows
+// --------------------------------------------------
+
+@mixin box-shadow-xs {
+    @include box-shadow(0 0 10px rgba($black, 0.125));
+}
+
+@mixin box-shadow-sm {
+    @include box-shadow(0 2px 20px rgba($black, 0.125));
+}
+
+@mixin box-shadow-lg {
+    @include box-shadow(0 3px 30px rgba($black, 0.125));
+}

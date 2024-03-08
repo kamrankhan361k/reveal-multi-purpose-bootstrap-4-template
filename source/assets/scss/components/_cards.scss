@@ -1,0 +1,321 @@
+/*  
+    --------------
+    Cards
+    --------------
+*/
+.card {
+    display: block;
+
+    .card-price {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
+    .card-date {
+        width: 65px;
+        height: 65px;
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        background-color: $black;
+        font-size: 0.7rem;
+        padding: 0.5rem;
+        @include transform(translateX(-30px));
+        @include radius(50%);
+
+        span {
+            display: block;
+            color: #fff;
+            text-align: center;
+            line-height: 1;
+
+            &:nth-child(2) {
+                font-size: 1.275rem;
+            }
+        }
+    }
+}
+/*  
+    --------------
+    Card title 
+    --------------
+*/
+.card-title {
+    a {
+        &:hover {
+            color: darken($primary, 10%);
+        }
+    }
+}
+/*  
+    --------------
+    Card image 
+    --------------
+*/
+.card-image {
+    .card-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+}
+.card-badge {
+    position: absolute;
+    left: $spacer;
+    top: $spacer;
+    font-weight: normal;
+    z-index: $zindex-dropdown;
+}
+/*  
+    --------------
+    Card footer 
+    --------------
+*/
+.card-footer {
+    &.card-footer-bottom {
+        padding: 0 $card-spacer-x $card-spacer-x;
+    }
+}
+/*  
+    --------------
+    Card dim 
+    --------------
+*/
+.card-dim {
+    background-color: darken($white, 2%);
+}
+/*  
+    --------------
+    Card shaddow 
+    --------------
+*/
+.card-fill {
+    border-color: $border-color;
+    background-color: $white;
+}
+/*  
+    --------------
+    Card item 
+    --------------
+*/
+.card-item {
+    .card-body {
+        background-color: $white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        @include box-shadow-sm;
+        @include transform(translateY(-1rem));
+        @include transition(all 0.4s);
+    }
+
+    &:hover {
+        .card-body {
+            @include box-shadow-sm;
+            @include transform(translateY(-1.5rem));
+        }
+    }
+}
+/*  
+    --------------
+    Card Box 
+    --------------
+*/
+.card-box {
+    overflow: hidden;
+
+    .card-text {
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all 0.4s);
+        @include transform(translateY(-10px));
+    }
+
+    &:hover {
+        .card-text {
+            @include transform(translateY(0));
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .card-image {
+        position: relative;
+
+        &:before {
+            content: "";
+            @include absolute-cover;
+            background-color: rgba($black, 0.4);
+        }
+
+        .card-body {
+            padding: $spacer * 1.5;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+
+            .card-title {
+                text-shadow: 0 0 10px black;
+            }
+            
+
+            @include media-breakpoint-up(lg) {
+                padding: $spacer * 2.45;
+            }
+
+            &.card-body-top {
+                top: 0;
+                bottom: auto;
+            }
+        }
+    }
+}
+/*  
+    -----------------
+    Card Hover Rise
+    -----------------
+*/
+.card-hover-rise {
+    background-color: $card-cap-bg !important;
+    border-color: $card-border-color !important;
+    overflow: visible;
+    @include box-shadow(none);
+
+    .card-body {
+        background-color: $white;
+        position: relative;
+        @include transform(translateY(-0.625rem));
+        @include transition(all 0.4s);
+    }
+
+    &:hover {
+        .card-body {
+            @include box-shadow-lg;
+            @include transform(translateY(0));
+        }
+    }
+}
+/*  
+    -----------------
+    Card Panel
+    -----------------
+*/
+.card-panel {
+    border-color: $border-color;
+
+    .card-header {
+        position: relative;
+
+        &.collapsed {
+            &:before {
+                @include transform(translateY(-50%) rotate(180deg));
+            }
+        }
+
+        &:before {
+            font-family: "LinearIcons";
+            content: "\e873";
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            @include transform(translateY(-50%));
+            @include transition(all 0.2s);
+        }
+    }
+
+    .card-body {
+        padding-top: 0;
+    }
+}
+/*  
+    -----------------
+    Card stacked
+    -----------------
+*/
+.card-stacked {
+    position: relative;
+    background-color: $white;
+
+    &:before {
+        border-radius: 0.25rem;
+        opacity: 0.75;
+        content: "";
+        position: absolute;
+        left: 4px;
+        right: 4px;
+        bottom: -8px;
+        display: block;
+        height: 100%;
+        background: darken($white, 8%);
+        border: 1px solid $border-color;
+        z-index: -1;
+    }
+}
+/*  
+    --------------
+    Card - Dark mode 
+    --------------
+*/
+@include dark-mode {
+    .card-fill {
+        background-color: $body-bg-dark-light;
+        border-color: $border-color-dark;
+    }
+
+    .card-stacked {
+        background-color: $body-bg-dark-light;
+
+        &:before {
+            background-color: $body-bg-dark;
+        }
+    }
+
+    .card-item {
+        .card-body {
+            background-color: $body-bg-dark-light;
+        }
+    }
+
+    .card-title {
+        a {
+            &:hover {
+                color: $light;
+            }
+        }
+    }
+
+    .card-header {
+        color: $body-color-dark;
+    }
+
+    .card-dim {
+        background-color: $border-color-dark;
+    }
+
+    .card-hover-rise {
+        .card-body {
+            background-color: $body-bg-dark-light;
+        }
+    }
+}
+/*  
+    --------------
+    Card - columns
+    --------------
+*/
+.card-columns {
+    &-4 {
+        @include media-breakpoint-up(lg) {
+            column-count: 4;
+        }
+    }
+    &-5 {
+        @include media-breakpoint-up(xl) {
+            column-count: 5;
+        }
+    }
+}

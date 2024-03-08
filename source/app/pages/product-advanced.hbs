@@ -1,0 +1,92 @@
+---
+divider-bg: dark
+divider-svg: light
+demo: true
+page-title: Short Sleeve Top Thermal Ladies Tshirt
+page-subtitle: Women's Clothing
+---
+{{> comment title="Product"}}
+
+<section class="pt-3">
+    <div class="container">
+        <div class="row">
+
+            {{> comment title="Product gallery"}}
+
+            <div class="col-lg-8">
+                <div class="mb-2">
+                    <img class="img-fluid br-sm" src="{{data.img}}/demo/fashion-1.jpg" alt="" />
+                </div>
+                <div class="mb-2">
+                    <img class="img-fluid br-sm" src="{{data.img}}/demo/fashion-2.jpg" alt="" />
+                </div>
+                <div class="mb-2">
+                    <img class="img-fluid br-sm" src="{{data.img}}/demo/fashion-3.jpg" alt="" />
+                </div>
+            </div>
+
+            {{> comment title="Product info"}}
+
+            <div class="col-lg-4">
+
+                <div class="sticky-top" style="top:180px">
+                    <div class="bg-white shadow-sm br-sm p-3 p-lg-4">
+                        {{> product-order-buy}}
+                        {{> product-order-add}}
+                        {{> product-order-info}}
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{{> comment title="Product details"}}
+
+<section class="bg-white">
+    <div class="container">
+
+        {{> comment title="Product tabs"}}
+
+        <ul class="nav nav-pills nav-lavalamp justify-content-center mb-4" id="productTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="true">
+                    Review
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">
+                    Description
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">
+                    Shipping
+                </a>
+            </li>
+        </ul>
+
+        {{> comment title="Product tab content"}}
+
+        <div class="tab-content" id="productTabContent">
+            <div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+
+                {{> product-tab-reviews}}
+
+            </div>
+            <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+
+                {{> product-tab-description}}
+
+            </div>
+            <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+
+                {{> product-tab-shipping}}
+
+            </div>
+        </div>
+    </div>
+</section>

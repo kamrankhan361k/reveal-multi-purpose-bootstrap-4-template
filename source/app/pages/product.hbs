@@ -1,0 +1,90 @@
+---
+divider-bg: dark
+divider-svg: white
+demo: true
+page-title: DUALSHOCK®4 Wireless Controller
+page-subtitle: PS4 Accessories
+---
+
+{{> comment title="Product"}}
+
+<section class="bg-white py-3">
+    <div class="container">
+        <div class="row align-items-lg-center">
+
+            {{> comment title="Product gallery"}}
+
+            <div class="col-lg-7 col-xl-8 pb-5">
+
+                <div class="owl-carousel" data-items="1" data-nav="false" data-margin="15" data-dots="true">
+                    <img src="assets/images/demo/product-1.png" alt="Product image" />
+                    <img src="assets/images/demo/product-1b.png" alt="Product image" />
+                    <img src="assets/images/demo/product-1c.png" alt="Product image" />
+                </div>
+            </div>
+
+            {{> comment title="Product info"}}
+
+            <div class="col-lg-5 col-xl-4">
+                <div class="bg-light shadow-sm br-sm p-3 p-lg-4">
+
+                    {{> product-order-buy}}
+
+                    {{> product-order-add}}
+
+                    {{> product-order-info}}
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{{> comment title="Product details"}}
+
+<section>
+    <div class="container">
+
+        {{> comment title="Product tabs"}}
+
+        <ul class="nav nav-tabs nav-lavalamp justify-content-center mb-4" id="productTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="true">
+                    Review
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">
+                    Description
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">
+                    Shipping
+                </a>
+            </li>
+        </ul>
+
+        {{> comment title="Product tab content"}}
+
+        <div class="tab-content" id="productTabContent">
+            <div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+
+                {{> product-tab-reviews}}
+
+            </div>
+            <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+
+                {{> product-tab-description}}
+
+            </div>
+            <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+
+                {{> product-tab-shipping}}
+
+            </div>
+        </div>
+    </div>
+</section>

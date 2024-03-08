@@ -1,0 +1,147 @@
+<div class="br-sm pr-lg-4 mt-xl-n6">
+
+    {{> comment title="Profile menu header"}}
+
+    <div class="py-3 py-lg-4">
+        <div class="row align-items-center justify-content-center no-gutters text-lg-center">
+            <div class="col-9 col-lg-12">
+                <div class="d-flex flex-lg-column align-items-center">
+                    <div class="pr-3 pr-lg-0">
+                        <img src="{{data.img}}/demo/user-5.jpg" alt="" class="rounded-circle mb-lg-2 img-fluid" style="width: 50px;">
+                    </div>
+                    <div>
+                        <div class="h5 m-0">John Doe</div>
+                        <div class="text-muted">john.doe@email.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 d-lg-none text-right">
+                <button class="btn btn-icon btn-primary btn-sm toggle-show" data-show="open-profile-sidebar">
+                    <i class="icon icon-text-align-center"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    {{> comment title="Profile sidebar"}}
+
+    <div class="sidebar sidebar-mobile" id="open-profile-sidebar">
+        <div class="sidebar-content">
+
+            <div class="sidebar-header clearfix d-lg-none">
+                <button type="button" class="close toggle-show p-3" data-show="open-profile-sidebar" aria-label="Close">
+                    <i class="icon icon-cross font-size-lg"></i>
+                </button>
+            </div>
+
+            {{> comment title="Profile account links"}}
+
+            <div class="mb-4 px-4 p-lg-0">
+                <ul class="list-group list-group-clean">
+
+                    <li class="list-group-item text-muted d-flex justify-content-between align-items-center">
+                        <label class="pre-label">Account</label>
+                    </li>
+
+                    <li class="list-group-item {{#ifpage 'profile'}} active{{/ifpage}}">
+                        <a href="profile.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="icon icon-user mr-2"></i>
+                                    <span>Profile account</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item {{#ifpage 'profile-payment'}} active{{/ifpage}}">
+                        <a href="profile-payment.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="icon icon-cart mr-2"></i>
+                                    <span>Paymnet methods</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item {{#ifpage 'profile-notifications'}} active{{/ifpage}}">
+                        <a href="profile-notifications.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="icon icon-alarm mr-2"></i>
+                                    <span>Notifications</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            {{> comment title="Profile dashboard links"}}
+
+            <div class="mb-4 px-4 p-lg-0">
+                <ul class="list-group list-group-clean">
+
+                    <li class="list-group-item text-muted d-flex justify-content-between align-items-center">
+                        <label class="pre-label">Dashboard</label>
+                    </li>
+
+                    <li class="list-group-item {{#ifpage 'profile-orders'}} active{{/ifpage}}">
+                        <a href="profile-orders.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="icon icon-cart mr-2"></i>
+                                    <span>Orders</span>
+                                </span>
+                                <span class="badge {{#ifpage 'profile-orders'}} badge-primary {{else}} badge-light{{/ifpage}} badge-pill">125</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item {{#ifpage 'profile-whishlist'}} active{{/ifpage}}">
+                        <a href="profile-whishlist.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="icon icon-heart mr-2"></i>
+                                    <span>Whishlist</span>
+                                </span>
+                                <span class="badge {{#ifpage 'profile-whishlist'}} badge-primary {{else}} badge-light{{/ifpage}} badge-pill">9</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            {{> comment title="Profile reset"}}
+
+            <div class="mb-4 px-4 p-lg-0">
+                <ul class="list-group list-group-clean">
+
+                    <li class="list-group-item text-muted d-flex justify-content-between align-items-center">
+                        <label class="pre-label">Access</label>
+                    </li>
+
+                    <li class="list-group-item {{#ifpage 'profile-password'}} active{{/ifpage}}">
+                        <a href="profile-reset-password.html">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="icon icon-lock mr-2"></i>
+                                    <span>Reset password</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="icon icon-enter-down mr-2"></i>
+                                    <span>Sign out</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>

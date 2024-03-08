@@ -1,0 +1,111 @@
+/*  
+    ------------------
+    Tabzy
+    -----------------
+*/
+.tabzy {
+    position: relative;
+
+    .tabzy-item {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        z-index: 99;
+        overflow: hidden;
+        @include transition(all 0.3s);
+
+        &:before {
+            content: "";
+            @include absolute-full;
+            @include box-shadow(inset rgba(255, 255, 255, 0.1) 1px 1px 1px 0px);
+        }
+
+        img {
+            display: none;
+        }
+
+        .tabzy-caption {
+            position: absolute;
+            overflow: hidden;
+
+            .tabsy-content {
+                @include transition(all 0.3s);
+                @include transform(translate3d(0, 100%, 0));
+            }
+        }
+
+        &.current {
+            .tabsy-content {
+                @include transform(translate3d(0, 0, 0));
+            }
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    .tabzy-gallery {
+        z-index: 1;
+
+        &,
+        & > div {
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        & > div {
+            opacity: 0;
+            @include transition(opacity 0.5s);
+
+            &.current {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@keyframes showmeright {
+    0% {
+        left: 0;
+        right: auto;
+        width: 0;
+    }
+
+    50% {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        right: auto;
+        width: 0;
+    }
+}
+
+@keyframes showmeleft {
+    0% {
+        left: auto;
+        right: 0;
+        width: 0;
+    }
+
+    50% {
+        left: auto;
+        right: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: auto;
+        right: 100%;
+        width: 0;
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    {{> comment title="Mobile Web-app fullscreen"}}
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    {{> comment title="Meta tags"}}
+
+    <meta name="description" content="{{global.site.description}}">
+    <meta name="author" content="{{global.site.author}}">
+    <link rel="icon" href="{{#if nested}}../{{/if}}assets/svg/favicon.ico">
+
+    {{> comment title="Title"}}
+
+    <title>{{global.site.title}} - {{page-title}}</title>
+
+    {{#unless global.settings.production}}
+    {{> comment title="Vendor stylesheets"}}
+
+    <link rel="stylesheet" media="all" href="{{#if nested}}../{{/if}}css/vendor/animate.css" />
+    <link rel="stylesheet" media="all" href="{{#if nested}}../{{/if}}css/vendor/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="{{#if nested}}../{{/if}}css/vendor/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="{{#if nested}}../{{/if}}css/vendor/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="{{#if nested}}../{{/if}}css/vendor/jquery.lavalamp.css" />
+
+    {{> comment title="Template stylesheets"}}
+
+    <link rel="stylesheet" media="all" href="{{#if nested}}../{{/if}}css/style.css" />
+    {{/unless}}
+    {{#if global.settings.production}}
+    <link rel="stylesheet" media="all" href="{{#if nested}}../{{/if}}css/vendor/bundle.min.css?v={{global.settings.version}}" />
+    {{/if}}
+
+    <!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+</head>
+
+<body{{{ theme}}}>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    {{#if global.settings.layouts}}
+    {{> layout-templates}}
+    {{/if}}
+    {{#if demo}}
+    {{> layout-navbar }}
+
+    {{#unlesspage 'index'}}
+    {{#unless no-header}}
+    {{> layout-breadcrumb}}
+
+    {{> layout-divider}}
+    {{/unless}}
+    {{/unlesspage}}
+    {{/if}}
+
+    {{> body }}
+    {{#if demo}}
+    {{> layout-footer }}
+    {{/if}}
+
+    {{> comment title="Vendor Scripts"}}
+
+    {{#unless global.settings.production}}
+    <script src="{{#if nested}}../{{/if}}js/vendor/jquery.min.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/bootstrap.bundle.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/in-view.min.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/jquery.lavalamp.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/owl.carousel.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/rellax.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/wow.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/tabzy.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/vendor/isotope.pkgd.js"></script>
+    {{/unless}}
+
+    {{> comment title="Template Scripts"}}
+
+    {{#unless global.settings.production}}
+    <script src="{{#if nested}}../{{/if}}js/main.js"></script>
+    <script src="{{#if nested}}../{{/if}}js/custom.js"></script>
+    {{/unless}}
+    {{#if global.settings.production}}
+    <script defer src="{{#if nested}}../{{/if}}js/bundle.min.js?v={{global.settings.version}}"></script>
+    {{/if}}
+
+    </body>
+
+</html>

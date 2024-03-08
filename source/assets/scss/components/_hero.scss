@@ -1,0 +1,23 @@
+/*  
+    --------------
+    Hero
+    --------------
+*/
+.hero {
+    position: relative;
+
+    &-product {
+        figure {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            height: 1px;
+            z-index: $zindex-popover;
+
+            figcaption {
+                @include translate-top-50;
+            }
+        }
+    }
+}

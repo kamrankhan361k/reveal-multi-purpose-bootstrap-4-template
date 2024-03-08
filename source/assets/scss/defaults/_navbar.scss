@@ -1,0 +1,148 @@
+/*  
+    --------------
+    Navbar
+    --------------
+*/
+.navbar {
+    @include transition(background-color 0.4s);
+
+    .navbar-item {
+        font-family: $font-family-heading;
+    }
+}
+
+.navbar-nav {
+    .dropdown-menu {
+        @include media-breakpoint-down(lg) {
+            @include box-shadow(none);
+        }
+    }
+
+    .dropdown-item {
+        p {
+            margin-bottom: 0;
+        }
+
+        .icon {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.navbar-collapse-sidebar {
+    @include media-breakpoint-down(md) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100% !important;
+        display: block !important;
+        bottom: 0;
+        width: 100%;
+        max-width: 300px;
+        background-color: $white;
+        z-index: $zindex-popover;
+
+        @include translate-left;
+        @include duration-4;
+        @include box-shadow-sm;
+
+        &:before {
+            @include absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            left: auto;
+            background-color: $overlay-reveal-color;
+            z-index: $zindex-popover;
+            @include transition(all 0.4s cubic-bezier(0.8, 0.2, 0.2, 0.9));
+        }
+
+        &.collapsing {
+            @include delay(0.1s);
+            @include translate-start;
+
+            &:before {
+                @include delay(0.1s);
+            }
+        }
+
+        &.show {
+            @include box-shadow-sm;
+            @include translate-start;
+
+            &:before {
+                width: 0;
+            }
+        }
+
+        .navbar-nav {
+            height: 100%;
+            overflow: auto;
+            padding-left: $spacing-md;
+            padding-right: $spacing-md;
+
+            .nav-item {
+                &.active {
+                    .nav-link {
+                        color: rgba($black, 0.6);
+                    }
+                }
+            }
+
+            .nav-link {
+                color: $black;
+
+                &:focus,
+                &:hover {
+                    color: rgba($black, 0.6);
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler {
+    color: $body-color;
+    &[aria-expanded="true"] {
+        .icon-menu {
+            &::before {
+                content: "\e870";
+                @include transform(rotate(90deg));
+            }
+        }
+    }
+
+    .icon-menu {
+        &::before {
+            @include duration-6;
+            display: inline-block;
+        }
+    }
+}
+
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $zindex-fixed;
+
+    &:before {
+        content: "";
+        background-color: white;
+        @include box-shadow-lg;
+        @include absolute-cover;
+        height: 0;
+        @include duration-2;
+    }
+
+    &.scrolled {
+        &:before {
+            height: 100%;
+        }
+    }
+
+    > * {
+        position: relative;
+    }
+}

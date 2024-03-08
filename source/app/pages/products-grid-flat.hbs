@@ -1,0 +1,96 @@
+---
+demo: true
+no-header: true
+page-title: Product grid flat
+page-subtitle: Cards with flat filters
+---
+{{> comment title="Header"}}
+
+<section class="box box-image bg-light text-white" style="background-image: url({{data.img}}demo/banner-1.jpg);">
+    <div class="container">
+        <header class="wow fadeInUp" data-wow-delay=".1s">
+            <div class="row justify-content-center pt-5 text-center">
+                <div class="col-lg-8">
+                    <h1 class="mb-0">Everything you love</h1>
+                    <p>Find new items now, with great deals and limited time offers</p>
+                </div>
+            </div>
+        </header>
+    </div>
+</section>
+
+{{> comment title="Products grid"}}
+
+<section class="bg-white p-0 sider sider-left">
+    <div class="container">
+        <div class="row">
+
+            {{> product-filter-sidebar-clean}}
+
+            {{> comment title="Products content"}}
+
+            <div class="col-lg-9 bg-white pl-lg-5">
+
+                {{> comment title="Products header"}}
+
+                <div class="pt-3 pt-lg-5 mb-3 mb-lg-4">
+                    {{> product-filter-header}}
+                </div>
+
+                {{> comment title="Products collection"}}
+
+                <div class="row gutters-mobile">
+
+                    {{#each (take data.products 12)}}
+                    <div class="col-6 col-xl-4">
+                        <div class="card card-fill mb-2 mb-lg-4">
+                            <div class="card-image">
+                                <img src="{{../data.img}}/demo/{{img}}" class="card-img-top" alt="...">
+                                {{#ifequal @index 1}}
+                                <span class="card-badge badge badge-danger">50%</span>
+                                {{/ifequal}}
+                                {{#ifequal @index 3}}
+                                <span class="card-badge badge badge-dark">Last offer</span>
+                                {{/ifequal}}
+                                {{#ifequal @index 7}}
+                                <span class="card-badge badge badge-success">New</span>
+                                {{/ifequal}}
+                            </div>
+                            <div class="card-body p-2 p-lg-3 text-center">
+                                <h4 class="card-title mb-0">
+                                    <a href="product-flat.html">
+                                        {{title}}
+                                    </a>
+                                </h4>
+                                <small class="pre-label text-muted">
+                                    <span>${{price}}</span>
+                                    <s>${{old-price}}</s>
+                                </small>
+                            </div>
+                            <div class="px-3 pb-3">
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="px-1" data-toggle="tooltip" data-placement="top" title="Whishlist">
+                                        <i class="icon icon-heart font-size-lg text-muted"></i>
+                                    </a>
+                                    <a href="#" class="px-2" data-toggle="tooltip" data-placement="top" title="Add to cart">
+                                        <i class="icon icon-cart font-size-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{/each}}
+                </div>
+
+                <div class="pb-3 pb-lg-5">
+
+                    {{> layout-pagination}}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>

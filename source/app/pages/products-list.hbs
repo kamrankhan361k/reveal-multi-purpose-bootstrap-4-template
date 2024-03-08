@@ -1,0 +1,78 @@
+---
+divider-bg: dark
+divider-svg: light
+demo: true
+page-title: Product list
+page-subtitle: Cards list preview
+---
+{{> comment title="Products list"}}
+
+<section class="py-3">
+    <div class="container">
+        <div class="row">
+
+            {{> product-filter-sidebar}}
+
+            {{> comment title="Products content"}}
+
+            <div class="col-lg-9">
+
+                {{> comment title="Products header"}}
+
+                <div class="bg-white p-2 p-lg-3 shadow-sm mb-2 mb-lg-4">
+                    {{> product-filter-header}}
+                </div>
+
+                {{> comment title="Products collection"}}
+
+                <div class="clearfix">
+
+                    {{#each (take data.products 9)}}
+                    <div class="card card-fill border-0 mb-2 mb-lg-4 shadow-sm">
+                        <div class="row align-items-center no-gutters">
+                            <div class="col-5">
+                                <div class="card-image">
+                                    <img src="{{../data.img}}/demo/{{img}}" class="card-img-top" alt="Product image">
+                                    {{#ifequal @index 1}}
+                                    <span class="card-badge badge badge-danger text-uppercase mr-2">50%</span>
+                                    {{/ifequal}}
+                                    {{#ifequal @index 3}}
+                                    <span class="card-badge badge badge-dark text-uppercase mr-2">Last offer</span>
+                                    {{/ifequal}}
+                                    {{#ifequal @index 4}}
+                                    <span class="card-badge badge badge-success text-uppercase mr-2">New</span>
+                                    {{/ifequal}}
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="px-3 px-lg-4 py-3 py-lg-4">
+                                    <h4 class="card-title mb-2">
+                                        <a href="product.html">{{title}}</a>
+                                    </h4>
+                                    <div class="d-none d-xl-block mb-4">
+                                        <p>{{description}}</p>
+                                    </div>
+                                    <div class="text-muted pre-label">
+                                        <span>${{price}}</span>
+                                        <s>${{old-price}}</s>
+                                    </div>
+                                    <div class="pt-4 d-none d-lg-block">
+                                        <a href="product.html" class="btn btn-primary">
+                                            Add to cart
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{/each}}
+                </div>
+
+                {{> layout-pagination}}
+
+            </div>
+        </div>
+    </div>
+
+</section>

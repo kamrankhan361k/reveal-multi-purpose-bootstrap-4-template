@@ -1,0 +1,49 @@
+{{> comment title="Checkout steps"}}
+
+<div class="pt-3 pt-lg-4 pb-5 pb-lg-6 mb-2 mb-lg-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="steps steps-sm">
+                    <ul class="row">
+                        <li class="col {{#ifpage 'checkout'}} current{{/ifpage}}{{#ifpage 'checkout-login' 'checkout-delivery' 'checkout-payment' 'checkout-receipt'}} active{{/ifpage}}">
+                            <a href="checkout.html">
+                                <span class="step-item" data-text="Checkout">
+                                    <span>1</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="col{{#ifpage 'checkout-login'}} current{{/ifpage}}{{#ifpage 'checkout-delivery' 'checkout-payment' 'checkout-receipt'}} active{{/ifpage}}">
+                            <a href="checkout-login.html">
+                                <span class="step-item" data-text="Login">
+                                    <span>2</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="col {{#ifpage 'checkout-delivery'}} current{{/ifpage}}{{#ifpage 'checkout-payment' 'checkout-receipt'}} active{{/ifpage}}">
+                            <a href="checkout-delivery.html">
+                                <span class="step-item" data-text="Delivery">
+                                    <span>3</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="col{{#ifpage 'checkout-payment'}} current{{/ifpage}}{{#ifpage 'checkout-receipt'}} active{{/ifpage}}">
+                            <a href="checkout-payment.html">
+                                <span class="step-item" data-text="Payment">
+                                    <span>4</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="col{{#ifpage 'checkout-receipt'}} current{{/ifpage}}">
+                            <a href="checkout-receipt.html">
+                                <span class="step-item" data-text="Receipt">
+                                    <span>5</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

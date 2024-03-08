@@ -1,0 +1,30 @@
+/*  
+    ----------
+    Pagination
+    ----------
+*/
+.page-item {
+    margin: 0 $spacing-xs;
+
+    .page-link {
+        @include border-radius(50%);
+        background-color: darken($light, 5%);
+        color: $dark;
+    }
+
+    &:first-child,
+    &:last-child {
+        .page-link {
+            @include border-radius(0);
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+
+    &.active {
+        .page-link {
+            background-color: darken($dark, 5%);
+            opacity: 0.5;
+        }
+    }
+}

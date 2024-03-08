@@ -1,0 +1,38 @@
+<h2 class="pre-label font-size-base">Items collection</h2>
+
+<div class="mb-3 mb-lg-5">
+
+    {{#each (take data.products 10)}}
+    <div class="card card-fill p-3 mb-3 shadow-sm bg-white">
+
+        <div class="row align-items-center no-gutters p-md-2">
+            <div class="col-lg-2">
+                <img src="assets/images/demo/{{img}}" class="img-fluid br-sm shadow-sm" alt="Image title">
+            </div>
+            <div class="col-lg-5 pl-lg-3 py-2 py-lg-0">
+                <div><small class="pre-label">Name</small></div>
+                <div><strong>{{title}}</strong></div>
+            </div>
+            <div class="col-6 col-lg-3 text-left">
+                <div><small class="pre-label">Price</small></div>
+                <div>
+                    <s>${{old-price}},00</s>
+                    <span>${{price}},00</span>
+                </div>
+            </div>
+            <div class="col-6 col-lg-2 text-right">
+                <div class="dropdown d-inline">
+                    <button class="btn btn-icon btn-rounded btn-outline-gray" type="button" id="dropdownMenuButton-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon icon-menu text-dark"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-{{id}}">
+                        <a class="dropdown-item" href="#">Remove</a>
+                        <a class="dropdown-item" href="#">Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
+</div>

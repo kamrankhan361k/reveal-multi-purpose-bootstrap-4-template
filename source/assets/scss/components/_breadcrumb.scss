@@ -1,0 +1,19 @@
+/*  
+    --------------
+    Breadcrumb
+    --------------
+*/
+
+.breadcrumb-light {
+    .breadcrumb-item {
+        a {
+            color: $light;
+        }
+    }
+}
+
+.breadcrumb-item {
+    &:before {
+        font-family: "LinearIcons";
+    }
+}

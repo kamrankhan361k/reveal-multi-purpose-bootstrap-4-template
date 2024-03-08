@@ -1,0 +1,31 @@
+---
+divider-bg: dark
+divider-svg: light
+demo: true
+page-title: My profile
+page-subtitle: User accout
+---
+{{> comment title="Profile dashboard"}}
+
+<section class="pt-0">
+    <div class="container">
+        <div class="row">
+
+            {{> comment title="Menu sidebar"}}
+
+            <div class="col-lg-3">
+
+                {{> profile-menu}}
+
+            </div>
+
+            {{> comment title="Dashboard details"}}
+
+            <div class="col-lg-9 pt-lg-4">
+
+                {{> profile-content-details}}
+
+            </div>
+        </div>
+    </div>
+</section>

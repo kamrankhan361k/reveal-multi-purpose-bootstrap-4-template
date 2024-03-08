@@ -1,0 +1,39 @@
+<h2 class="pre-label font-size-base">Payment options</h2>
+
+{{#each data.payment}}
+<div class="card bg-white mb-3 shadow-sm rounded">
+    <div class="card-header py-4 p-3 p-md-5">
+        <div class="row align-items-lg-center no-gutters">
+            <div class="col-9">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                    <div class="pr-lg-3">
+                        <img src="{{../data.img}}/demo/card-{{icon}}.png" alt="" width="100">
+                    </div>
+                    <div class="pt-3 pt-lg-0">
+                        <p class="pre-label mb-0">•••• •••• •••• 7041</p>
+                        <small>
+                            {{#if @first}}
+                            <span class="align-middle badge badge-success">Primary</span>
+                            {{/if}}
+                        </small>
+                        <small class="text-muted">{{card}} | Exp date: {{end}}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 text-right">
+                <div class="dropdown d-inline">
+                    <button class="btn btn-icon btn-rounded btn-outline-gray" type="button" id="dropdownMenuButton-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="icon icon-menu text-dark"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-{{id}}">
+                        <a class="dropdown-item" href="#">Remove</a>
+                        <a class="dropdown-item" href="#">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{{/each}}

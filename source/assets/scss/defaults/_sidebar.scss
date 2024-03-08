@@ -1,0 +1,91 @@
+/*  
+    -------
+    Sidebar
+    -------
+*/
+
+@mixin sidebar-content {
+    .sidebar-content {
+        &:before {
+            @content;
+        }
+    }
+}
+
+.sidebar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: $zindex-modal;
+    background-color: $white;
+
+    @include duration-4;
+    @include delay(0.4s);
+    @include translate-left;
+
+    @include sidebar-content {
+        right: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        & {
+            width: 400px;
+        }
+    }
+
+    .sidebar-content {
+        overflow: auto;
+        height: 100%;
+
+        &:before {
+            @include absolute;
+            content: "";
+            right: 0;
+            left: auto;
+            background-color: $overlay-reveal-color;
+            z-index: $zindex-popover;
+            @include transition(all 0.4s cubic-bezier(0.8, 0.2, 0.2, 0.9));
+        }
+    }
+
+    &.sidebar-right {
+        right: 0;
+        left: auto;
+        @include translate-right;
+
+        @include sidebar-content {
+            left: 0;
+        }
+    }
+
+    &.show {
+        @include translate-start;
+        @include delay(0.1s);
+
+        @include sidebar-content {
+            width: 0;
+            @include delay(0.4s);
+        }
+    }
+}
+
+.sidebar-mobile {
+    @include media-breakpoint-up(lg) {
+        position: static;
+        width: auto;
+        background-color: transparent;
+        z-index: $zindex-dropdown;
+        @include transform(none);
+
+        @include sidebar-content {
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 0;
+    }
+}

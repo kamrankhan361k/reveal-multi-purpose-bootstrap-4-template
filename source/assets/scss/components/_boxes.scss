@@ -1,0 +1,325 @@
+/*  
+    --------------
+    Box
+    --------------
+*/
+.box {
+    display: block;
+
+    .box-content {
+        padding: $spacer * 1.5;
+
+        @include media-breakpoint-up(sm) {
+            & {
+                padding: $spacer * 2;
+            }
+        }
+    }
+
+    .box-content-lg {
+        padding: $spacer * 2.5;
+
+        @include media-breakpoint-up(sm) {
+            & {
+                padding: $spacer * 5;
+            }
+        }
+    }
+
+    .box-spacer-sm {
+        height: 3rem;
+
+        @include media-breakpoint-up(lg) {
+            height: 6rem;
+        }
+    }
+
+    .box-spacer-md {
+        height: 6rem;
+
+        @include media-breakpoint-up(lg) {
+            height: 12rem;
+        }
+    }
+
+    .box-spacer {
+        height: 9rem;
+
+        @include media-breakpoint-up(lg) {
+            height: 18rem;
+        }
+    }
+
+    .box-spacer-lg {
+        height: 12rem;
+
+        @include media-breakpoint-up(lg) {
+            height: 24rem;
+        }
+    }
+
+    .box-spacer-xl {
+        height: 15rem;
+
+        @include media-breakpoint-up(lg) {
+            height: 30rem;
+        }
+    }
+}
+/*  
+    --------------
+    Box image
+    --------------
+*/
+.box-image {
+    background-position: center;
+    background-size: cover;
+}
+/*  
+    --------------
+    Box parallax
+    --------------
+*/
+.box-parallax {
+    background-attachment: fixed;
+}
+/*  
+    --------------
+    Box border
+    --------------
+*/
+.box-border {
+    border: 1px solid rgba($white, 0.5);
+}
+/*  
+    --------------
+    Box product
+    --------------
+*/
+.box-product {
+    overflow: hidden;
+    position: relative;
+
+    .btn-add-cart {
+        position: absolute;
+        right: $spacing-md;
+        bottom: $spacing-md;
+    }
+}
+/*  
+    --------------
+    Box hover
+    --------------
+*/
+.box-hover {
+    @include duration-2;
+
+    &:hover {
+        @include transform(translateY(-$spacing-xs));
+        @include box-shadow-sm;
+    }
+}
+/*  
+    --------------
+    Box hover drop
+    --------------
+*/
+.box-hover-drop {
+    position: relative;
+    overflow: hidden;
+
+    &:before,
+    p,
+    .box-content {
+        @include duration-4;
+    }
+
+    &:hover {
+        &:before,
+        p,
+        .box-content {
+            @include translate-start;
+        }
+
+        p {
+            opacity: 1;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 0.625rem;
+        background-color: $white;
+        @include duration-4;
+        @include translate-bottom;
+    }
+
+    p {
+        @include transform(translate3d(0, -50%, 0));
+        opacity: 0;
+    }
+
+    .box-content {
+        @include transform(translate3d(0, 20%, 0));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+/*  
+    --------------
+    Box hover slide
+    --------------
+*/
+.box-hover-slide {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .box-content {
+            @include translate-start;
+        }
+    }
+
+    .box-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($black, 0.5);
+        color: $white;
+        @include translate-bottom;
+        @include duration-4;
+    }
+}
+/*  
+    --------------
+    Box hover fall
+    --------------
+*/
+.box-hover-fall {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .box-content {
+            p {
+                @include translate-start;
+                opacity: 1;
+            }
+        }
+
+        &:before {
+            background-color: rgba($dark, 0.5);
+        }
+    }
+
+    &:before {
+        content: "";
+        @include duration-4;
+        @include absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .box-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: $spacer * 2 $spacer * 1.5;
+        overflow: hidden;
+
+        @include media-breakpoint-up(lg) {
+            padding: $spacer * 4 $spacer * 3;
+        }
+
+        p {
+            opacity: 0;
+            margin-bottom: $spacing-xs;
+            @include duration-4;
+            @include transform(translate3d(-350px, 0, 0));
+
+            &:nth-child(2) {
+                @include delay(0.1s);
+            }
+
+            &:nth-child(3) {
+                @include delay(0.15s);
+            }
+
+            &:nth-child(4) {
+                @include delay(0.2s);
+            }
+
+            &:nth-child(5) {
+                @include delay(0.25s);
+            }
+
+            span {
+                padding: $spacing-xs $spacing-sm;
+                background-color: $white;
+                color: $body-color;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.box-hover-pull {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .box-content {
+            color: $white;
+
+            header {
+                margin-top: -25px;
+            }
+            footer {
+                opacity: 1;
+                @include translate-start;
+                @include delay(0.3s);
+            }
+        }
+        &:before {
+            background-color: rgba($dark, 0.5);
+        }
+    }
+
+    &:before {
+        content: "";
+        @include duration-4;
+        @include absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .box-content {
+        @include absolute-full;
+
+        header {
+            @include centered;
+            @include duration-4;
+            min-width: 100%;
+            padding: $spacer;
+        }
+        footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            padding: $spacer;
+            @include duration-4;
+            @include translate-bottom-sm;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+/*  
+    ------------------
+    List group clean
+    ------------------
+*/
+.list-group-clean {
+    .list-group-item {
+        @include border-radius(0);
+        background-color: transparent;
+        border: 0;
+        padding: 0 0 $spacing-sm 0;
+
+        a {
+            color: $body-color;
+            @include duration-2;
+        }
+
+        &:hover {
+            a {
+                color: $primary;
+            }
+        }
+
+        &.active,
+        &.active a {
+            color: $primary;
+            margin-top: 0;
+        }
+    }
+}
+
+.text-white {
+    .list-group-item {
+        &,
+        a {
+            color: $white !important;
+        }
+
+        &:hover a,
+        &.active,
+        &.active a {
+            color: rgba($white, 0.6) !important;
+        }
+    }
+}
+/*  
+    -----------------------
+    List group - Dark mode
+    ----------------------
+*/
+@include dark-mode {
+    .list-group-item {
+        background-color: $body-bg-dark-light;
+    }
+
+    .list-group-clean {
+        .list-group-item {
+            background-color: transparent;
+
+            a {
+                color: $body-color-dark;
+            }
+
+            &.active,
+            &.active a {
+                color: $primary;
+            }
+        }
+    }
+}

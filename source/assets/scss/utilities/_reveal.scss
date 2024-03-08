@@ -1,0 +1,108 @@
+/*  
+    ------
+    Reveal
+    ------
+*/
+.reveal {
+    position: relative;
+    display: inline-block;
+    background-image: none;
+
+    &:after {
+        content: "";
+        background-color: #cfcfcf;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        @include animationTiming(cubic-bezier(0.19, 1, 0.22, 1));
+        @include animationDuration(1s);
+    }
+
+    &:after {
+        @include animationDuration(1.2s);
+        @include delay(0.5s);
+    }
+
+    > * {
+        opacity: 0;
+        @include transition(all 0.2s);
+        display: block;
+        float: left;
+
+        img {
+            vertical-align: top;
+        }
+    }
+
+    &.revealed {
+        &[data-reveal="left"]:after {
+            @include animationName(showmeleft);
+        }
+
+        &[data-reveal="right"]:after {
+            @include animationName(showmeright);
+        }
+
+        > * {
+            opacity: 1;
+            @include delay(0.5s);
+        }
+    }
+}
+
+.reveal-cover {
+    display: block;
+    height: 100%;
+
+    > * {
+        @include absolute-cover;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &:before {
+        display: block;
+        content: "";
+        padding-top: 100%;
+    }
+}
+
+@keyframes showmeright {
+    0% {
+        left: 0;
+        right: auto;
+        width: 0;
+    }
+
+    50% {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+
+    100% {
+        left: 100%;
+        right: auto;
+        width: 0;
+    }
+}
+
+@keyframes showmeleft {
+    0% {
+        left: auto;
+        right: 0;
+        width: 0;
+    }
+
+    50% {
+        left: auto;
+        right: 0;
+        width: 100%;
+    }
+
+    100% {
+        left: auto;
+        right: 100%;
+        width: 0;
+    }
+}

@@ -1,0 +1,258 @@
+/*  
+    --------------
+    Form simple
+    --------------
+*/
+.form-control {
+    &-rounded {
+        @include radiusXl;
+    }
+}
+
+.form-control-simple {
+    background-color: transparent !important;
+    border-color: $input-bg-fill;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    @include radius(0);
+
+    &::placeholder {
+        color: darken($input-bg-fill, 10%);
+    }
+
+    &:focus {
+        border-color: $secondary;
+        @include box-shadow(none);
+    }
+}
+/*  
+    --------------
+    Form fill
+    --------------
+*/
+.form-control-fill {
+    background-color: $input-bg-fill;
+    border-color: $input-bg-fill;
+
+    &::placeholder {
+        color: darken($input-bg-fill, 20%);
+    }
+
+    &:focus {
+        background-color: darken($input-bg-fill, 10%);
+    }
+}
+/*  
+    --------------
+    Form flat
+    --------------
+*/
+.form-control-flat {
+    @include radius(0);
+}
+/*  
+    --------------
+    Custom small
+    --------------
+*/
+.custom-control-sm {
+    padding-left: 1.5rem;
+
+    .custom-control-label {
+        font-size: $small-font-size;
+
+        &:before,
+        &:after {
+            left: -1.5rem;
+        }
+
+        &:before,
+        &:after {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    .custom-control-input {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+/*  
+    ------------------------
+    Custom control color set
+    ------------------------
+*/
+@each $color, $value in $theme-colors {
+    .custom-control-#{$color} {
+        .custom-control-label {
+            &:before {
+                border-color: $value;
+            }
+        }
+
+        &.custom-switch {
+            .custom-control-label {
+                &:after {
+                    background-color: $value;
+                }
+            }
+        }
+
+        .custom-control-input {
+            &:checked ~ .custom-control-label {
+                &:before {
+                    border-color: $value;
+                    background-color: $value;
+                }
+            }
+        }
+    }
+}
+
+/*  
+    ------------------------
+    Custom control light
+    ------------------------
+*/
+.custom-control-light {
+    .custom-control-label {
+        &:before {
+            border-color: $gray-600;
+        }
+    }
+
+    .custom-control-input {
+        &:checked ~ .custom-control-label {
+            &:before {
+                border-color: $gray-600;
+            }
+        }
+    }
+
+    &.custom-checkbox {
+        .custom-control-input {
+            &:checked ~ .custom-control-label {
+                &:after {
+                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'><path fill='000000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/></svg>");
+                }
+            }
+        }
+    }
+
+    &.custom-radio {
+        .custom-control-input {
+            &:checked ~ .custom-control-label {
+                &:after {
+                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'><circle r='3' fill='000000'/></svg>");
+                }
+            }
+        }
+    }
+
+    &.custom-switch {
+        .custom-control-label {
+            &:before {
+                background-color: transparent;
+                border-color: $gray-400 !important;
+            }
+
+            &:after {
+                background-color: $gray-400 !important;
+            }
+        }
+
+        .custom-control-input {
+            &:checked ~ .custom-control-label {
+                &:after {
+                    background-color: $gray-400;
+                }
+
+                &:before {
+                    border-color: $gray-400;
+                }
+            }
+        }
+    }
+}
+/*  
+    -----------------
+    Form - Dark mode
+    -----------------
+*/
+@include dark-mode {
+    .form-control {
+        background-color: $body-bg-dark-light;
+        color: $body-color-dark;
+
+        &:not(.is-valid) {
+            border-color: $border-color-dark;
+        }
+    }
+
+    .form-control-fill {
+        background-color: $body-bg-dark-lighter;
+        border-color: lighten($body-bg-dark-lighter, 5%);
+
+        &::placeholder {
+            color: darken($body-color-dark, 20%);
+        }
+    }
+
+    .input-group-text {
+        background-color: $body-bg-dark-lighter;
+        border-color: $border-color-dark;
+    }
+
+    .custom-select {
+        background-color: $body-bg-dark-light;
+    }
+
+    @each $color, $value in $theme-colors {
+        .custom-control-#{$color} {
+            .custom-control-label {
+                &:before {
+                    background-color: $body-bg-dark-lighter;
+                }
+            }
+        }
+    }
+
+    .custom-control-light {
+        .custom-control-input {
+            &:checked ~ .custom-control-label {
+                &:before {
+                    background-color: $body-bg;
+                }
+            }
+        }
+
+        &.custom-switch {
+            .custom-control-input {
+                &:checked ~ .custom-control-label {
+                    &:before {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-group-icon {
+    position: relative;
+
+    .form-control {
+        padding-left: 3rem;
+    }
+
+    .btn {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        @include translate-top-50;
+    }
+}

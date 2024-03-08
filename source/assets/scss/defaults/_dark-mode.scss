@@ -1,0 +1,13 @@
+/*  
+    --------------------
+    Dark mode - General
+    -------------------
+*/
+@include dark-mode {
+    background-color: $body-bg-dark;
+    color: $body-color-dark;
+
+    hr {
+        border-color: $border-color-dark;
+    }
+}

@@ -1,0 +1,211 @@
+{{> comment title="Main navigation"}}
+
+<nav class="{{#if nav-white}}bg-white {{/if}}navbar navbar-expand-lg{{#unless nav-relative}} navbar-sticky{{/unless}}{{#unless nav-light}} navbar-dark{{/unless}}">
+    <div class="container">
+
+        {{> comment title="Logo"}}
+
+        <a class="navbar-brand mr-1" href="index.html">
+            <img src="{{#if nested}}../{{/if}}{{data.svg}}reveal-logo.svg" alt="">
+        </a>
+
+        {{> comment title="Collapse"}}
+
+        <div class="collapse navbar-collapse navbar-collapse-sidebar" id="mainNavbar">
+
+            {{> comment title="Mobile search"}}
+
+            <div class="d-block d-lg-none">
+                <div class="p-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="{{data.svg}}reveal-symbol.svg" alt="">
+                        <button class="btn p-0" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon icon-cross font-size-lg"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-light">
+                    <div class="form-group form-group-icon">
+                        <input type="text" class="form-control form-control-simple" placeholder="Search site">
+                        <button class="btn btn-clean"><i class="icon icon-magnifier"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            {{> comment title="Navbar links"}}
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                {{> comment title="Single dropdown"}}
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="pages">
+                        <a class="dropdown-item" href="landing-pages.html">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <div class="px-1">
+                                        <i class="icon icon-book"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="px-2">
+                                        <p>Landing pages</p>
+                                        <span class="label">Pre-maded templates</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="inner-pages.html">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <span class="px-1">
+                                        <i class="icon icon-layers"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="px-2">
+                                        <p>Inner pages</p>
+                                        <span class="label">Combine with everything</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                {{> comment title="Mega dropdown"}}
+
+                <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle" href="#" id="ecommerce" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+
+                    <div class="dropdown-menu w-100 bg-white border-top" aria-labelledby="ecommerce">
+                        <div class="py-3 px-lg-4 py-lg-5">
+                            <div class="container d-block p-0">
+                                <div class="row">
+
+                                    {{#each data.navbar.shop}}
+                                    <div class="col-lg-3">
+
+                                        <div class="pre-label p-2">
+                                            {{{title}}}
+                                        </div>
+
+                                        {{#each links}}
+                                        <a class="dropdown-item rounded-sm" href="{{link}}">
+                                            <p>{{{title}}}</p>
+                                            <span class="label">{{label}}</span>
+                                        </a>
+
+                                        {{/each}}
+                                    </div>
+
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                {{> comment title="Single dropdown"}}
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="support" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Support
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="support">
+                        <a class="dropdown-item" href="../documentation/index.html">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <span class="px-1 text-primary">
+                                        <i class="icon icon-book"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="px-2">
+                                        <p>Documentation</p>
+                                        <span class="label">Examples and guidelines</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="{{global.site.helpdesk}}" target="_blank">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <span class="px-1 text-danger">
+                                        <i class="icon icon-heart-pulse"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="px-2">
+                                        <p>Helpdesk</p>
+                                        <span class="label">Create ticket</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="{{global.site.purchase}}" target="_blank">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <span class="px-1 text-dark">
+                                        <i class="icon icon-cart"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="px-2">
+                                        <p>Get licence</p>
+                                        <span class="label">Buy this template</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                {{> comment title="Links mobile"}}
+
+                <li class="nav-item d-block d-lg-none">
+                    <hr>
+                    <a href="#" class="nav-link"><small>Documentation</small></a>
+                    <a href="#" class="nav-link"><small>Helpdesk</small></a>
+                    <a href="#" class="nav-link"><small>About us</small></a>
+                    <hr>
+                    <div class="row row-sm">
+                        <div class="col-6">
+                            <a href="#" class="btn btn-block btn-sm btn-outline-secondary">
+                                <i class="icon icon-map"></i>
+                                <span>Find store</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="btn btn-block btn-sm btn-outline-secondary">
+                                <i class="icon icon-phone-handset"></i>
+                                <span>Call us</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+
+        {{> comment title="Navbar toggler"}}
+
+        <div class="d-flex align-items-center">
+            <a class="btn btn-sm btn-primary btn-rounded ml-lg-4 px-3" href="{{global.site.purchase}}">
+                <i class="icon icon-cart"></i> Purchase
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon icon-menu"></span>
+            </button>
+        </div>
+
+    </div>
+</nav>

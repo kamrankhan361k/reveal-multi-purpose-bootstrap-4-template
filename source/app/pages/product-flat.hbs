@@ -1,0 +1,113 @@
+---
+demo: true
+no-header: true
+page-title: Atomic Memory Fit Shoe
+page-subtitle: "Flat preview"
+---
+{{> comment title="Breadcrumbs"}}
+
+<header class="header header-main bg-dark">
+    <div class="pb-2 py-lg-3">
+        <div class="container text-light">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-0 h4">{{page-title}}</h2>
+                    <small class="pre-label d-none d-lg-block">{{page-subtitle}}</small>
+                </div>
+                <div class="col-lg-4 text-lg-right pt-2 pt-lg-0">
+                    <ol class="breadcrumb breadcrumb-light justify-content-lg-end">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item"><a href="#">Category</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+{{> comment title="Content"}}
+
+<section class="bg-white p-0 sider sider-right">
+    <div class="container">
+        <div class="row align-items-lg-center">
+
+            {{> comment title="Product gallery"}}
+
+            <div class="col-lg-7 bg-white">
+
+                <div class="owl-carousel" data-items="1" data-nav="false" data-margin="15" data-dots="true">
+                    <img src="assets/images/templates/clothing/shoe-1.jpg" alt="Product image" />
+                    <img src="assets/images/templates/clothing/shoe-1a.jpg" alt="Product image" />
+                </div>
+            </div>
+
+            {{> comment title="Product info"}}
+
+            <div class="col-lg-5 pl-lg-6 pl-xl-7">
+                <div class="px-lg-4 py-6">
+
+                    {{> product-order-buy}}
+
+                    {{> product-order-add}}
+
+                    {{> product-order-info}}
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<hr class="divider">
+
+{{> comment title="Product details"}}
+
+<section>
+    <div class="container">
+
+        {{> comment title="Product tabs"}}
+
+        <ul class="nav nav-tabs nav-lavalamp justify-content-center mb-4" id="productTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="true">
+                    Review
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false">
+                    Description
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="shipping-tab" data-toggle="tab" href="#shipping" role="tab" aria-controls="shipping" aria-selected="false">
+                    Shipping
+                </a>
+            </li>
+        </ul>
+
+        {{> comment title="Product tab content"}}
+
+        <div class="tab-content" id="productTabContent">
+            <div class="tab-pane fade show active" id="review" role="tabpanel" aria-labelledby="review-tab">
+
+                {{> product-tab-reviews}}
+
+            </div>
+            <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+
+                {{> product-tab-description}}
+
+            </div>
+            <div class="tab-pane fade" id="shipping" role="tabpanel" aria-labelledby="shipping-tab">
+
+                {{> product-tab-shipping}}
+
+            </div>
+        </div>
+    </div>
+</section>

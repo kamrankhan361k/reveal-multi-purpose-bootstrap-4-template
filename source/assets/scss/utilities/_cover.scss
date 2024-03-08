@@ -1,0 +1,92 @@
+/*  
+    -----
+    Cover
+    -----
+*/
+.cover {
+    background-position: center;
+    background-size: cover;
+
+    &[class*="-overlay"] {
+        @include absolute-full;
+
+        &::after {
+            content: "";
+            @include absolute-full;
+        }
+    }
+
+    &[class*="-overlay-dark"] {
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: "";
+            background: rgba($black, 0.4);
+        }
+    }
+
+    &[class*="-gradient-vertical"] {
+        -webkit-mask-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 1)),
+            to(rgba(0, 0, 0, 0))
+        );
+    }
+
+    &[class*="-gradient-vertical-bottom"] {
+        -webkit-mask-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0)),
+            to(rgba(0, 0, 0, 1))
+        );
+    }
+
+    &[class*="-gradient-horizontal"] {
+        -webkit-mask-image: -webkit-gradient(
+            linear,
+            right top,
+            left top,
+            from(rgba(0, 0, 0, 1)),
+            to(rgba(0, 0, 0, 0.5))
+        );
+    }
+
+    &[class*="-gradient-horizontal-right"] {
+        -webkit-mask-image: -webkit-gradient(
+            linear,
+            right top,
+            left top,
+            from(rgba(0, 0, 0, 0.5)),
+            to(rgba(0, 0, 0, 1))
+        );
+    }
+
+    &[class*="-blur"] {
+        margin: -20px;
+        @include filter(blur(10px));
+    }
+}
+/*  
+    ----------
+    Cover back
+    ----------
+*/
+.cover-back {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cover-wrap {
+    position: relative;
+    overflow: hidden;
+}

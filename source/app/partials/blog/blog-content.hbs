@@ -1,0 +1,31 @@
+{{> comment title="Articles"}}
+
+<div class="row gutters-mobile istp-wrap istp-wrap-vertical">
+    {{#each (take data.news 8)}}
+    <div class="istp col-6">
+        <div class="card mb-3 mb-lg-5">
+            <div class="card-image lift br-sm">
+                <a href="#">
+                    <img src="{{../data.img}}general/{{img}}" class="card-img-top" alt="...">
+                </a>
+            </div>
+            <div class="pt-2 pt-lg-3">
+                <div class="mb-lg-2">
+                    <small class="pre-label d-flex align-items-center">
+                        {{#ifequal @index 1}}
+                        <span class="badge badge-danger mr-2">Promo</span>
+                        {{/ifequal}}
+                        {{#ifequal @index 6}}
+                        <span class="badge badge-success mr-2">Ad</span>
+                        {{/ifequal}}
+                        <span>Category</span>
+                    </small>
+                </div>
+                <div class="card-title h5"><a href="#">{{title}}</a></div>
+                <small class="card-text text-muted">Posted by John Doe</small>
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
+</div>

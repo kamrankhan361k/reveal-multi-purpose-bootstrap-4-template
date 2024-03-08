@@ -1,0 +1,44 @@
+/*  
+    --------------
+    Owl carousel
+    --------------
+*/
+.date {
+    position: relative;
+    display: inline-block;
+    padding-right: 30px;
+
+    .date-picker {
+        @include absolute;
+        background-color: transparent;
+        text-indent: -99999px;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        z-index: 9;
+    }
+
+    .date-value,
+    .date-value * {
+        line-height: 1;
+    }
+
+    .day {
+        display: inline;
+    }
+
+    .month {
+        font-size: 80%;
+        display: inline;
+    }
+
+    .year {
+        display: none;
+    }
+
+    .icon {
+        position: absolute;
+        right: 0;
+        bottom: 5px;
+    }
+}

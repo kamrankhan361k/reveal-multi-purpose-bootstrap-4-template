@@ -1,0 +1,48 @@
+---
+demo: true
+no-header: true
+nav-white: true
+nav-light: true
+nav-relative: true
+page-title: Blog
+page-subtitle: News articles
+---
+<hr class="m-0">
+
+{{> comment title="Header"}}
+
+{{!-- <header class="cover pt-6 pt-lg-8 pb-2 pb-lg-6" style="background-image: url({{data.img}}demo/banner-1.jpg)"> --}}
+<header class="bg-light py-4 py-lg-5">
+    <div class="pb-2 py-lg-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-0 h4">Latest articles</h2>
+                    <small class="pre-label d-none d-lg-block">News archive</small>
+                </div>
+                <div class="col-lg-4 text-lg-right pt-2 pt-lg-0">
+                    <ol class="breadcrumb justify-content-lg-end">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item"><a href="#">Category</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<hr class="m-0">
+
+{{> comment title="Blog content"}}
+
+<section class="bg-white py-4 py-lg-5">
+    <div class="container">
+
+        {{> blog-content-2}}
+
+        {{> layout-pagination}}
+
+    </div>
+</section>

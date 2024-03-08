@@ -1,0 +1,39 @@
+/*  
+    --------------
+    BG Layer
+    --------------
+*/
+.bg-layer {
+    position: absolute;
+    z-index: 0;
+
+    &-horizontal {
+        height: 50%;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: auto;
+
+        &-top {
+            top: 0;
+        }
+        &-bottom {
+            bottom: 0;
+        }
+    }
+
+    &-vertical {
+        width: 50%;
+        left: auto;
+        right: auto;
+        top: 0;
+        bottom: 0;
+
+        &-left {
+            left: 0;
+        }
+        &-right {
+            right: 0;
+        }
+    }
+}

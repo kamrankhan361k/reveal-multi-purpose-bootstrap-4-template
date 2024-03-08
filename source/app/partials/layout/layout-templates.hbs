@@ -1,0 +1,60 @@
+<div class="btn-layout toggle-show shadow-lg" data-show="templatebar">
+    Demos
+</div>
+
+<div class="sidebar sidebar-right" id="templatebar">
+    <div class="sidebar-content">
+        <div class="p-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="m-0">Browse templates</h4>
+                <a href="#" class="btn toggle-show" data-show="templatebar">
+                    <span class="icon icon-cross font-size-lg"></span>
+                </a>
+            </div>
+
+            <hr>
+
+            <header class="mb-3">
+                <label class="pre-label">Landing pages</label>
+            </header>
+
+            <div class="row mb-4">
+                {{#each data.templates}}
+                <div class="col-6">
+                    <div class="mb-3">
+                        <div class="box box-image box-hover br-sm mb-3 shadow-sm bg-gray px-4 pt-4">
+                            <a href="{{#if ../nested}}../{{/if}}{{url}}" target="_blank">
+                                <img src="{{#if ../nested}}../{{/if}}{{../data.img}}{{img}}" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                        <p>{{title}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+            {{#each data.inner}}
+            <header class="mb-3">
+                <label class="pre-label">{{category}}</label>
+            </header>
+
+            <div class="row mb-4">
+                {{#each items}}
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <div class="box box-image box-hover br-sm mb-3 shadow-sm bg-gray px-4 pt-4">
+                            <a href="{{#if ../../nested}}../{{/if}}{{url}}">
+                                <img src="{{#if ../../nested}}../{{/if}}{{../../data.img}}/layouts/{{img}}" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                        <p>{{title}}</p>
+                    </div>
+                </div>
+
+                {{/each}}
+
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

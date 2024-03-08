@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Mobile Web-app fullscreen -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Meta tags -->
+
+    <meta name="description" content="Extended Bootstrap 4 Template">
+    <meta name="author" content="Goran Hrustic">
+    <link rel="icon" href="assets/svg/favicon.ico">
+
+    <!-- Title -->
+
+    <title>Reveal - About</title>
+
+    <!-- Vendor stylesheets -->
+
+    <link rel="stylesheet" media="all" href="css/vendor/animate.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="css/vendor/jquery.lavalamp.css" />
+
+    <!-- Template stylesheets -->
+
+    <link rel="stylesheet" media="all" href="css/style.css" />
+
+    <!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+</head>
+
+<body>
+    <div class="loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Main navigation -->
+    
+    <nav class="navbar navbar-expand-lg navbar-sticky">
+        <div class="container">
+    
+            <!-- Logo -->
+    
+            <a class="navbar-brand mr-1" href="index.html">
+                <img src="assets/svg/reveal-logo.svg" alt="">
+            </a>
+    
+            <!-- Collapse -->
+    
+            <div class="collapse navbar-collapse navbar-collapse-sidebar" id="mainNavbar">
+    
+                <!-- Mobile search -->
+    
+                <div class="d-block d-lg-none">
+                    <div class="p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="assets/svg/reveal-symbol.svg" alt="">
+                            <button class="btn p-0" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon icon-cross font-size-lg"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-light">
+                        <div class="form-group form-group-icon">
+                            <input type="text" class="form-control form-control-simple" placeholder="Search site">
+                            <button class="btn btn-clean"><i class="icon icon-magnifier"></i></button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Navbar links -->
+    
+                <ul class="navbar-nav ml-auto">
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+    
+                    <!-- Single dropdown -->
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pages">
+                            <a class="dropdown-item" href="landing-pages.html">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="px-1">
+                                            <i class="icon icon-book"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Landing pages</p>
+                                            <span class="label">Pre-maded templates</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="inner-pages.html">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1">
+                                            <i class="icon icon-layers"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Inner pages</p>
+                                            <span class="label">Combine with everything</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+    
+                    <!-- Mega dropdown -->
+    
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="ecommerce" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+    
+                        <div class="dropdown-menu w-100 bg-white border-top" aria-labelledby="ecommerce">
+                            <div class="py-3 px-lg-4 py-lg-5">
+                                <div class="container d-block p-0">
+                                    <div class="row">
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Shop
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-grid.html">
+                                                <p>Products grid</p>
+                                                <span class="label">Cards grid preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-list.html">
+                                                <p>Products list</p>
+                                                <span class="label">Cards list preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-topbar.html">
+                                                <p>Products topbar</p>
+                                                <span class="label">Card grid with top filters</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-grid-flat.html">
+                                                <p>Products grid flat <span class='badge badge-danger'>New</span></p>
+                                                <span class="label">Cards with flat filters</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="products-list-flat.html">
+                                                <p>Products list flat</p>
+                                                <span class="label">Cards with flat filters</span>
+                                            </a>
+    
+                                        </div>
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Orders
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout.html">
+                                                <p>Checkout</p>
+                                                <span class="label">Order checkout example</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-login.html">
+                                                <p>Login & register</p>
+                                                <span class="label">Login forms</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-delivery.html">
+                                                <p>Delivery</p>
+                                                <span class="label">Delivery methods</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-payment.html">
+                                                <p>Payment</p>
+                                                <span class="label">Payment options</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="checkout-receipt.html">
+                                                <p>Receipt</p>
+                                                <span class="label">Receipt &amp; email confirmation</span>
+                                            </a>
+    
+                                        </div>
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Product page
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="product.html">
+                                                <p>Product page</p>
+                                                <span class="label">Simple preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="product-advanced.html">
+                                                <p>Product advanced</p>
+                                                <span class="label">Advanced preview</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="product-flat.html">
+                                                <p>Product flat <span class='badge badge-danger'>New</span></p>
+                                                <span class="label">Flat preview</span>
+                                            </a>
+    
+                                        </div>
+    
+                                        <div class="col-lg-3">
+    
+                                            <div class="pre-label p-2">
+                                                Account
+                                            </div>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile.html">
+                                                <p>Profile page</p>
+                                                <span class="label">User profile</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-payment.html">
+                                                <p>Payment options</p>
+                                                <span class="label">Set default payemnt</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-notifications.html">
+                                                <p>Notifications</p>
+                                                <span class="label">Edit alerts</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-orders.html">
+                                                <p>My Orders</p>
+                                                <span class="label">Order history</span>
+                                            </a>
+    
+                                            <a class="dropdown-item rounded-sm" href="profile-whishlist.html">
+                                                <p>Wishlist</p>
+                                                <span class="label">Saved products</span>
+                                            </a>
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <!-- Single dropdown -->
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="support" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Support
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="support">
+                            <a class="dropdown-item" href="../documentation/index.html">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1 text-primary">
+                                            <i class="icon icon-book"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Documentation</p>
+                                            <span class="label">Examples and guidelines</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="http://helpdesk.elathemes.com/" target="_blank">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1 text-danger">
+                                            <i class="icon icon-heart-pulse"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Helpdesk</p>
+                                            <span class="label">Create ticket</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="https://themeforest.net/item/reveal-responsive-multipurpose-ecommerce-bootstrap-html-template/29644121" target="_blank">
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <span class="px-1 text-dark">
+                                            <i class="icon icon-cart"></i>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="px-2">
+                                            <p>Get licence</p>
+                                            <span class="label">Buy this template</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+    
+                    <!-- Links mobile -->
+    
+                    <li class="nav-item d-block d-lg-none">
+                        <hr>
+                        <a href="#" class="nav-link"><small>Documentation</small></a>
+                        <a href="#" class="nav-link"><small>Helpdesk</small></a>
+                        <a href="#" class="nav-link"><small>About us</small></a>
+                        <hr>
+                        <div class="row row-sm">
+                            <div class="col-6">
+                                <a href="#" class="btn btn-block btn-sm btn-outline-secondary">
+                                    <i class="icon icon-map"></i>
+                                    <span>Find store</span>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="btn btn-block btn-sm btn-outline-secondary">
+                                    <i class="icon icon-phone-handset"></i>
+                                    <span>Call us</span>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </li>
+    
+                </ul>
+            </div>
+    
+            <!-- Navbar toggler -->
+    
+            <div class="d-flex align-items-center">
+                <a class="btn btn-sm btn-primary btn-rounded ml-lg-4 px-3" href="https://themeforest.net/item/reveal-responsive-multipurpose-ecommerce-bootstrap-html-template/29644121">
+                    <i class="icon icon-cart"></i> Purchase
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon icon-menu"></span>
+                </button>
+            </div>
+    
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    
+    <section class="section bg-light">
+        <div class="container">
+            <header class="wow fadeInUp" data-wow-delay=".1s">
+                <div class="row justify-content-center pt-5 text-center">
+                    <div class="col-lg-8">
+                        <h1 class="mb-0">Gues what?</h1>
+                        <h2>You're lucky to be with us</h2>
+                        <div class="pb-4">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Modi nesciunt pariatur culpa dolor laboriosam inventore officiis iusto!
+                                Voluptatibus laborum aliquid fugiat enim!
+                            </p>
+                        </div>
+                        <p><a href="#" class="btn btn-outline-dark btn-rounded px-lg-4">Read more</a></p>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+    
+    <!-- Carousel -->
+    
+    <section class="overflow-hidden py-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="owl-carousel owl-primary owl-visible owl-bottom " data-items="3" data-nav="false" data-margin="15" data-dots="false" data-autoplay="true">
+                        <div class="wow fadeInUp p-0" data-wow-delay=".9s">
+                            <img src="assets/images/templates/corporate/box-4.jpg" alt="" />
+                        </div>
+                        <div class="wow fadeInUp p-0" data-wow-delay="1s">
+                            <img src="assets/images/templates/corporate/box-3.jpg" alt="" />
+                        </div>
+                        <div class="wow fadeInUp p-0" data-wow-delay="1.2s">
+                            <img src="assets/images/templates/corporate/img-2.jpg" alt="" />
+                        </div>
+                        <div class="wow fadeInUp p-0" data-wow-delay="1s">
+                            <img src="assets/images/templates/corporate/box-1.jpg" alt="" />
+                        </div>
+                        <div class="wow fadeInUp p-0" data-wow-delay="1s">
+                            <img src="assets/images/templates/corporate/box-5.jpg" alt="" />
+                        </div>
+                        <div class="wow fadeInUp p-0" data-wow-delay="1.3s">
+                            <img src="assets/images/templates/corporate/img-1.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Banner -->
+    
+    <section class="cover-wrap bg-white">
+        <div class="cover cover-overlay" style="background-image: url(assets/images/general/8.jpg);"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center text-white">
+                    <div class="py-6 wow fadeInUp" data-wow-delay=".4s">
+                        <h2>We always care about our clients!</h2>
+                        <p class="lead mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie metus a blandit tincidunt. Pellentesque placerat, enim vitae tristique suscipit, lorem nunc venenatis purus
+                        </p>
+                        <a href="#" class="btn btn-rounded btn-outline-light">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Intro -->
+    
+    <section class="section">
+        <div class="container">
+            <header class="mb-4 mb-lg-6 text-center wow fadeInUp" data-wow-delay=".8s">
+                <h2>Did we get your attention?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, molestias quidem ut rem unde.</p>
+            </header>
+    
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="box box-image box-hover bg-primary br-sm mb-4 text-white">
+                                <div class="box-content">
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <div class="h2 mb-0">1000+</div>
+                                            <p>Projects</p>
+                                            <small>Architecto officiis ipsa quaerat laudantium, qui quibusdam accusamus.</small>
+                                        </div>
+                                        <i class="icon icon-database icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-image box-hover bg-white box-border br-sm mb-4">
+                                <div class="box-content">
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <div class="h2 mb-0">400+</div>
+                                            <p>Happy clients</p>
+                                            <small>Architecto officiis ipsa quaerat laudantium, qui quibusdam accusamus.</small>
+                                        </div>
+                                        <i class="icon icon-heart-pulse icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pt-0 pt-lg-5 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="box box-image box-hover bg-white box-border br-sm mb-4">
+                                <div class="box-content">
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <div class="h2 mb-0">20k</div>
+                                            <p>Working hours</p>
+                                            <small>Architecto officiis ipsa quaerat laudantium, qui quibusdam accusamus.</small>
+                                        </div>
+                                        <i class="icon icon-history icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="box box-image box-hover bg-white box-border br-sm mb-4">
+                                <div class="box-content">
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <div class="h2 mb-0">10</div>
+                                            <p>Years</p>
+                                            <small>Architecto officiis ipsa quaerat laudantium, qui quibusdam accusamus.</small>
+                                        </div>
+                                        <i class="icon icon-layers icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Faqs -->
+    
+    <section class="bg-white">
+        <div class="container">
+    
+            <header class="mb-4 mb-lg-6 text-center wow fadeInUp" data-wow-delay=".4s">
+                <h2>Ask us. Anything!</h2>
+                <p>Apply Now. Browse open positions, check out the exciting job opportunities we offer in different countries!</p>
+            </header>
+    
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="accordion" id="accordion1">
+                        <div class="card card-panel bg-light shadow-sm mb-3 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="card-header py-4 collapsed" id="accordion1heading1" data-toggle="collapse" data-target="#accordion1collapse1" aria-expanded="false" aria-controls="accordion1collapse1">
+                                Help a buyer with an item that hasn’t arrived
+                            </div>
+                            <div id="accordion1collapse1" class="collapse" aria-labelledby="accordion1heading1" data-parent="#accordion1">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur deleniti sequi
+                                    voluptates neque minus, nulla dolore dolorem totam facilis cumque modi ex cupiditate laudantium
+                                    repudiandae ratione. Magnam, doloremque fugiat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-panel bg-light shadow-sm mb-3 wow fadeInUp" data-wow-delay=".7s">
+                            <div class="card-header py-4 collapsed" id="accordion1heading2" data-toggle="collapse" data-target="#accordion1collapse2" aria-expanded="false" aria-controls="accordion1collapse2">
+                                Handle a cancellation request
+                            </div>
+                            <div id="accordion1collapse2" class="collapse" aria-labelledby="accordion1heading2" data-parent="#accordion1">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur deleniti sequi
+                                    voluptates neque minus, nulla dolore dolorem totam facilis cumque modi ex cupiditate
+                                    laudantium repudiandae ratione. Magnam, doloremque fugiat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-panel bg-light shadow-sm mb-3 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="card-header py-4 collapsed" id="accordion1heading3" data-toggle="collapse" data-target="#accordion1collapse3" aria-expanded="false" aria-controls="accordion1collapse3">
+                                Offer a refund as a managed payments seller
+                            </div>
+                            <div id="accordion1collapse3" class="collapse" aria-labelledby="accordion1heading3" data-parent="#accordion1">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur deleniti
+                                    sequi voluptates neque minus, nulla dolore dolorem totam facilis cumque modi ex cupiditate
+                                    laudantium repudiandae ratione. Magnam, doloremque fugiat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 pt-lg-5">
+                    <div class="accordion" id="accordion2">
+                        <div class="card card-panel bg-light shadow-sm mb-3 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="card-header py-4 collapsed" id="accordion2heading1" data-toggle="collapse" data-target="#accordion2collapse1" aria-expanded="false" aria-controls="accordion2collapse1">
+                                Help a buyer with an item that hasn’t arrived
+                            </div>
+                            <div id="accordion2collapse1" class="collapse" aria-labelledby="accordion2heading1" data-parent="#accordion2">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur deleniti sequi
+                                    voluptates neque minus, nulla dolore dolorem totam facilis cumque modi ex cupiditate laudantium
+                                    repudiandae ratione. Magnam, doloremque fugiat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-panel bg-light shadow-sm mb-3 wow fadeInUp" data-wow-delay=".7s">
+                            <div class="card-header py-4 collapsed" id="accordion2heading2" data-toggle="collapse" data-target="#accordion2collapse2" aria-expanded="false" aria-controls="accordion2collapse2">
+                                Handle a cancellation request
+                            </div>
+                            <div id="accordion2collapse2" class="collapse" aria-labelledby="accordion2heading2" data-parent="#accordion2">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur deleniti sequi
+                                    voluptates neque minus, nulla dolore dolorem totam facilis cumque modi ex cupiditate laudantium
+                                    repudiandae ratione. Magnam, doloremque fugiat.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-panel bg-light shadow-sm mb-3 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="card-header py-4 collapsed" id="accordion2heading3" data-toggle="collapse" data-target="#accordion2collapse3" aria-expanded="false" aria-controls="accordion2collapse3">
+                                Offer a refund as a managed payments seller
+                            </div>
+                            <div id="accordion2collapse3" class="collapse" aria-labelledby="accordion2heading3" data-parent="#accordion2">
+                                <div class="card-body">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur deleniti sequi
+                                    voluptates neque minus, nulla dolore dolorem totam facilis cumque modi ex cupiditate laudantium
+                                    repudiandae ratione. Magnam, doloremque fugiat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Client care -->
+    
+    <section class="bg-light" id="start">
+    
+        <div class="mb-5">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <div class="wow fadeInUp" data-wow-delay=".2s">
+                            <h2>We always care about our clients!</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="wow fadeInUp" data-wow-delay=".4s">
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie metus a blandit tincidunt. Pellentesque placerat, enim vitae tristique suscipit, lorem nunc venenatis purus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container mb-5">
+            <div class="px-5 bg-white br-sm">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-5 text-center">
+                        <div class="wow fadeIn" data-wow-delay=".4s">
+                            <img src="assets/images/general/c1.jpg" alt="" class="img-fluid w-75" />
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="wow fadeInUp" data-wow-delay=".1s">
+                            <h2>Start your bussiness now</h2>
+                            <p>Proin porta, sapien nec rutrum sollicitudin, metus lectus lacinia ipsum, pharetra ultrices.</p>
+                            <form class="form-inline">
+                                <div class="form-group mb-2">
+                                    <label for="text2" class="sr-only">Email</label>
+                                    <input type="text" class="form-control form-control-rounded" id="text2" placeholder="Your email">
+                                </div>
+                                <button type="submit" class="btn btn-rounded btn-dark mb-2 ml-2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="divider">
+    
+    <!-- Jobs -->
+    
+    <section class="bg-light overflow-hidden">
+        <div class="container">
+    
+            <header class="mb-4 mb-lg-6 text-center wow fadeInUp" data-wow-delay=".6s">
+                <h2>Get a job! We're hiring!</h2>
+                <p>Browse open positions, check out the exciting job opportunities we offer in different countries!</p>
+            </header>
+    
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel owl-primary owl-visible owl-center" data-items="2" data-nav="true" data-margin="15" data-dots="true">
+    
+                        <figure class="p-3 p-lg-4 br-sm bg-white text-center wow fadeInUp" data-wow-delay=".0s">
+                            <label class="pre-label">Berlin</label>
+                            <h4>Truck driver</h4>
+                            <figcaption class="mb-3">Aspernatur in mollitia officia magni corrupti explicabo</figcaption>
+                            <a href="#" class="link link-right link-primary">Apply now</a>
+                        </figure>
+    
+                        <figure class="p-3 p-lg-4 br-sm bg-white text-center wow fadeInUp" data-wow-delay=".1s">
+                            <label class="pre-label">Amsterdam</label>
+                            <h4>Data analyst</h4>
+                            <figcaption class="mb-3">Aspernatur in mollitia officia magni corrupti explicabo</figcaption>
+                            <a href="#" class="link link-right link-primary">Apply now</a>
+                        </figure>
+    
+                        <figure class="p-3 p-lg-4 br-sm bg-white text-center wow fadeInUp" data-wow-delay=".2s">
+                            <label class="pre-label">London</label>
+                            <h4>Customer support</h4>
+                            <figcaption class="mb-3">Aspernatur in mollitia officia magni corrupti explicabo</figcaption>
+                            <a href="#" class="link link-right link-primary">Apply now</a>
+                        </figure>
+    
+                        <figure class="p-3 p-lg-4 br-sm bg-white text-center wow fadeInUp" data-wow-delay=".3s">
+                            <label class="pre-label">Paris</label>
+                            <h4>Marketing manager</h4>
+                            <figcaption class="mb-3">Aspernatur in mollitia officia magni corrupti explicabo</figcaption>
+                            <a href="#" class="link link-right link-primary">Apply now</a>
+                        </figure>
+    
+                        <figure class="p-3 p-lg-4 br-sm bg-white text-center wow fadeInUp" data-wow-delay=".4s">
+                            <label class="pre-label">Barcelona</label>
+                            <h4>Software developer</h4>
+                            <figcaption class="mb-3">Aspernatur in mollitia officia magni corrupti explicabo</figcaption>
+                            <a href="#" class="link link-right link-primary">Apply now</a>
+                        </figure>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-between align-items-end text-center text-md-left">
+    
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <a href="../documentation/index.html" class="link link-underline link-light mr-3"><i class="icon icon-book"></i> Documentation</a>
+                    <a href="http://helpdesk.elathemes.com/" class="link link-underline link-light mr-3"><i class="icon icon-heart-pulse"></i> Help</a>
+                </div>
+    
+                <div class="col-md-6 text-md-right">
+                    <a href="https://themeforest.net/item/reveal-responsive-multipurpose-ecommerce-bootstrap-html-template/29644121" class="btn btn-outline-light btn-rounded btn-sm px-3">
+                        <i class="icon icon-cart"></i> Get the licence
+                    </a>
+                </div>
+    
+            </div>
+    
+            <div class="pt-5 text-muted text-center">
+                <div class="mb-3"><img src="assets/svg/reveal-logo.svg" alt=""></div>
+                <div><small class="text-muted pre-label">A bold visual experience</small></div>
+                <small>All rights reserved 2020 © Reveal</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vendor Scripts -->
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.js"></script>
+    <script src="js/vendor/in-view.min.js"></script>
+    <script src="js/vendor/jquery.lavalamp.js"></script>
+    <script src="js/vendor/owl.carousel.js"></script>
+    <script src="js/vendor/rellax.js"></script>
+    <script src="js/vendor/wow.js"></script>
+    <script src="js/vendor/tabzy.js"></script>
+    <script src="js/vendor/isotope.pkgd.js"></script>
+
+    <!-- Template Scripts -->
+
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+
+    </body>
+
+</html>

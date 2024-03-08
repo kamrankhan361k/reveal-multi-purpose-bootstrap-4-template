@@ -1,0 +1,41 @@
+---
+demo: true
+nav-sticky: true
+nav-dark: true
+divider-bg: dark
+divider-svg: light
+page-title: Inner pages
+page-subtitle: Predefined elements
+---
+<section class="pt-3">
+    <div class="container">
+        {{#each data.inner}}
+        <header class="mb-3">
+            <label class="pre-label">{{category}}</label>
+        </header>
+
+        <div class="row mb-5">
+            {{#each items}}
+            <div class="col-sm-6 col-lg-4">
+                <div class="mb-3">
+                    <div class="box box-image box-hover br-sm mb-3 shadow-sm bg-gray px-3 pt-3 px-lg-5 pt-lg-5">
+                        <a href="{{url}}">
+                            <img src="{{../../data.img}}/layouts/{{img}}" class="card-img-top" alt="...">
+                        </a>
+                    </div>
+                    <p class="lead">{{title}}</p>
+                </div>
+            </div>
+
+            {{/each}}
+        </div>
+        {{/each}}
+
+        <div class="pt-5 text-center">
+            <a href="landing-pages.html" class="btn btn-primary btn-rounded px-4">
+                <i class="icon icon-book"></i>
+                View landing pages
+            </a>
+        </div>
+    </div>
+</section>

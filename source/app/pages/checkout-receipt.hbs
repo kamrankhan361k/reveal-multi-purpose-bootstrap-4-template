@@ -1,0 +1,188 @@
+---
+divider-bg: dark
+divider-svg: light
+demo: true
+page-title: Receipt page
+page-subtitle: Order confirmation
+---
+{{> comment title="Checkout receipt"}}
+
+<section class="pt-0">
+
+    {{> checkout-steps}}
+
+    {{> comment title="Receipt"}}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8">
+
+                <div class="alert alert-primary shadow-sm rounded alert-dismissible fade show p-3 p-lg-4 mb-5 p-md-5" role="alert">
+                    <h2 class="h6 mb-0">Your order is completed!</h2>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                {{> comment title="Receipt shipping info"}}
+
+                <h2 class="pre-label font-size-base">Shipping info</h2>
+
+                <div class="bg-white shadow-sm rounded mb-3 p-3 p-md-5">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Name</small>
+                                <p>John Doe</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Email</small>
+                                <p>johndoe@company.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Phone</small>
+                                <p>+122 523 352</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Zip</small>
+                                <p>94107</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">City</small>
+                                <p>San Francisco, California</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Address</small>
+                                <p>795 Folsom Ave, Suite 600</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Company name</small>
+                                <p>Divano Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Company phone</small>
+                                <p>+122 333 6665</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                {{> comment title="Receipt Order details"}}
+
+                <h2 class="pre-label font-size-base">Order details</h2>
+
+                <div class="bg-white shadow-sm rounded mb-3 p-3 p-md-5">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Order no.</small>
+                                <p>52522-63259226</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Transaction ID</small>
+                                <p>2265996</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Order date</small>
+                                <p>20/04/2020</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Shipping arrival</small>
+                                <p>25/04/2020</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {{> comment title="Receipt Payment details"}}
+
+                <h2 class="pre-label font-size-base">Payment details</h2>
+
+                <div class="bg-white shadow-sm rounded mb-3 p-3 p-md-5">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Transaction time</small>
+                                <p>20/04/2020 at 20:50</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Amount</small>
+                                <p>$ 1259,00</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Total items</small>
+                                <p>4</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <small class="pre-label">Cart details</small>
+                                <p>**** **** **** 9656</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{> comment title="Buttons"}}
+
+                <div class="py-3">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-6">
+                            <a href="profile-orders.html" class="btn btn-dark btn-primary btn-rounded px-lg-5">Order history</a>
+                        </div>
+                        <div class="col-6 text-right">
+                            <a href="profile-whishlist.html" class="btn btn-primary btn-rounded px-lg-5">My whishlist</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>

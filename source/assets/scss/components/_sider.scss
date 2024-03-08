@@ -1,0 +1,40 @@
+/*  
+    --------------
+    Sider
+    --------------
+*/
+.sider {
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+        &:before {
+            background-color: $light;
+            content: "";
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+        }
+    }
+
+    &-left {
+        &:before {
+            left: 0;
+        }
+    }
+
+    &-right {
+        &:before {
+            right: 0;
+        }
+    }
+}
+
+@include dark-mode {
+    .sider {
+        &:before {
+            background-color: $dark;
+        }
+    }
+}

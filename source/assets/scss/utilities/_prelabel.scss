@@ -1,0 +1,27 @@
+/*  
+    --------
+    Prelabel
+    --------
+*/
+.pre-label {
+    font-weight: $font-weight-base;
+    font-family: $font-family-body;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: lighten($black, 50%);
+
+    &-sm {
+        font-size: 80%;
+    }
+}
+
+/*  
+    ------------------------
+    Custom control color set
+    ------------------------
+*/
+@each $color, $value in $theme-colors {
+    .pre-label-#{$color} {
+        color: lighten($value, 20%);
+    }
+}

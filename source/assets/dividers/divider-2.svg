@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="100" viewBox="0 0 1920 100">
+  <defs>
+    <clipPath id="clip-divider-2">
+      <rect width="1920" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="divider-2" clip-path="url(#clip-divider-2)">
+    <path id="Path_1" data-name="Path 1" d="M0,30.074,353.848,54.829l500.921-37.86,307.251,43.685,285.408-43.685L1747.4,78.127,1920,40.267V101H0Z" transform="translate(0 -1)"/>
+  </g>
+</svg>

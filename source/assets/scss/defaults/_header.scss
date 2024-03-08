@@ -1,0 +1,34 @@
+/*  
+    --------------
+    Header
+    --------------
+*/
+.header {
+    &-sticky {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: sticky;
+        z-index: $zindex-sticky + 5;
+        @include transition(all 0.4s);
+
+        .breadcrumb,
+        .pre-label {
+            @include transition(all 0.3s);
+        }
+
+        .pre-label {
+            position: absolute;
+        }
+
+        &.active {
+            .pre-label {
+                opacity: 0;
+            }
+        }
+    }
+
+    &-main {
+        padding-top: 4.5rem;
+    }
+}

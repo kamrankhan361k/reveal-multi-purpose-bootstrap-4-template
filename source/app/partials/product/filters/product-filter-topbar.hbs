@@ -1,0 +1,156 @@
+{{> comment title="Topbar"}}
+
+<div class="py-3 py-lg-4">
+    <div class="container">
+        <div class="row">
+
+            {{> comment title="Column dropdown"}}
+
+            <div class="col-md-3">
+                <div class="dropdown mb-2">
+
+                    <div class="btn btn-white btn-block dropdown-toggle pr-5" role="button" id="dropdownCheckboxes" data-toggle="dropdown" aria-expanded="false">
+                        Checkboxes
+                    </div>
+
+                    <div class="dropdown-menu p-4 w-100" aria-labelledby="dropdownCheckboxes">
+                        <ul class="list-group list-group-clean pt-2 keep-open">
+
+                            {{#each data.filter.filters-group-1}}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckGroup{{id}}">
+                                    <label class="custom-control-label" for="customCheckGroup{{id}}">{{title}}</label>
+                                </span>
+                                <span class="badge badge-light badge-pill">{{qty}}</span>
+                            </li>
+
+                            {{/each}}
+                            <li class="list-group-item">
+                                <hr />
+                            </li>
+
+                            {{#each data.filter.filters-group-2}}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheckCategory{{id}}">
+                                    <label class="custom-control-label" for="customCheckCategory{{id}}">{{title}}</label>
+                                </span>
+                                <span class="badge badge-light badge-pill">{{qty}}</span>
+                            </li>
+
+                            {{/each}}
+                        </ul>
+
+                        <div class="pt-2">
+                            <div class="btn btn-primary btn-sm btn-block">Update filters</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            {{> comment title="Column dropdown"}}
+
+            <div class="col-md-3">
+                <div class="dropdown mb-2">
+
+                    <div class="btn btn-white btn-block dropdown-toggle pr-5" role="button" id="dropdownRadiobuttons" data-toggle="dropdown" aria-expanded="false">
+                        Radio buttons
+                    </div>
+
+                    <div class="dropdown-menu p-4 w-100" aria-labelledby="dropdownRadiobuttons">
+                        <ul class="list-group list-group-clean pt-2 keep-open">
+                            {{#each data.filter.filters-group-3}}
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio{{id}}" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio{{id}}">{{title}}</label>
+                                </span>
+                                <span class="badge badge-light badge-pill">{{qty}}</span>
+                            </li>
+
+                            {{/each}}
+                        </ul>
+
+                        <div class="pt-2">
+                            <div class="btn btn-primary btn-sm btn-block">Update filters</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{> comment title="Column dropdown"}}
+
+            <div class="col-md-3">
+                <div class="dropdown mb-2">
+
+                    <div class="btn btn-white btn-block dropdown-toggle pr-5" role="button" id="dropdownCheckboxButtons" data-toggle="dropdown" aria-expanded="false">
+                        Checkbox buttons
+                    </div>
+
+                    <div class="dropdown-menu p-4 w-100" aria-labelledby="dropdownCheckboxButtons">
+                        <div class="keep-open d-flex justify-content-between">
+
+                            <span class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-sm active">
+                                    <input type="checkbox" checked> S
+                                </label>
+                            </span>
+
+                            <span class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-sm">
+                                    <input type="checkbox"> M
+                                </label>
+                            </span>
+
+                            <span class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-sm">
+                                    <input type="checkbox"> L
+                                </label>
+                            </span>
+
+                            <span class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-sm">
+                                    <input type="checkbox"> XL
+                                </label>
+                            </span>
+
+                            <span class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-sm">
+                                    <input type="checkbox"> XXL
+                                </label>
+                            </span>
+                        </div>
+                        <div class="pt-2">
+                            <div class="btn btn-primary btn-sm btn-block">Update filters</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{> comment title="Column dropdown"}}
+
+            <div class="col-md-3">
+                <div class="dropdown mb-2">
+
+                    <div class="btn btn-white btn-block dropdown-toggle pr-5" role="button" id="dropdownSliderRange" data-toggle="dropdown" aria-expanded="false">
+                        Slider range
+                    </div>
+
+                    <div class="dropdown-menu p-4 w-100" aria-labelledby="dropdownSliderRange">
+                        <div class="keep-open">
+                            <label for="customRange1">Price</label>
+                            <input type="range" class="custom-range" id="customRange1" min="0" max="5" step="0.5">
+                        </div>
+                        <div class="pt-2">
+                            <div class="btn btn-primary btn-sm btn-block">Update filters</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

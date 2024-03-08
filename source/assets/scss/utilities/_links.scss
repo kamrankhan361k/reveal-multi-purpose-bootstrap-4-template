@@ -1,0 +1,125 @@
+/*  
+    ----------------
+    Link animaitions 
+    ----------------
+*/
+
+.link {
+    position: relative;
+    @include duration-2;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        @include duration-4;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.link-main {
+    padding-left: 40px;
+
+    &:before {
+        background-color: #808080;
+        width: 30px;
+        height: 1px;
+        top: 50%;
+        @include transform(translateY(-50%));
+    }
+
+    &:hover {
+        padding-left: 45px;
+
+        &:before {
+            width: 15px;
+        }
+    }
+}
+
+.link-underline {
+    padding-bottom: 0.25rem;
+
+    &:before {
+        background-color: $black;
+        width: 0;
+        height: 1px;
+    }
+
+    &.active,
+    &:hover {
+        &:before {
+            width: 100%;
+            right: 0;
+            transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+    }
+}
+
+.link-swipe {
+    padding-left: 35px;
+
+    &:before {
+        background-color: $black;
+        width: 25px;
+        height: 1px;
+        top: 50%;
+    }
+
+    &:hover {
+        padding-left: 65px;
+
+        &:before {
+            width: 50px;
+        }
+    }
+}
+
+.link-right {
+    padding-left: 30px;
+
+    &:before,
+    &:after {
+        content: "⟶";
+        top: 50%;
+        @include transform(translate(0, -50%));
+    }
+
+    &:after {
+        @include transform(translate(-100%, -50%));
+        opacity: 0;
+    }
+
+    &:hover {
+        &:before {
+            @include transform(translate(100%, -50%));
+            opacity: 0;
+        }
+
+        &:after {
+            @include transform(translate(0, -50%));
+            opacity: 1;
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+    .link-#{$color} {
+        color: $value !important;
+
+        &:hover {
+            color: darken($value, 5%) !important;
+        }
+
+        &:not(.link-right):before,
+        &:not(.link-right):after {
+            color: $value;
+            background-color: $value;
+        }
+    }
+}
